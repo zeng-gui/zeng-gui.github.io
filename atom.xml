@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-11T08:40:44.762Z</updated>
+  <updated>2022-02-11T11:47:11.068Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,20 +17,109 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>机器学习</title>
+    <link href="http://example.com/post/498ab7d9/"/>
+    <id>http://example.com/post/498ab7d9/</id>
+    <published>2022-02-11T11:45:30.000Z</published>
+    <updated>2022-02-11T11:47:11.068Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;机器学习相关知识与学习经验与资源分享&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="人工智能" scheme="http://example.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="AI" scheme="http://example.com/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git&amp;github的使用</title>
+    <link href="http://example.com/post/9ff00cee/"/>
+    <id>http://example.com/post/9ff00cee/</id>
+    <published>2022-02-11T11:31:30.000Z</published>
+    <updated>2022-02-11T11:34:23.812Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;git和github的相关使用&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux基础与实操</title>
+    <link href="http://example.com/post/7596faec/"/>
+    <id>http://example.com/post/7596faec/</id>
+    <published>2022-02-11T11:30:25.000Z</published>
+    <updated>2022-02-11T11:42:48.462Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Linux相关基础知识与实操&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python基础</title>
+    <link href="http://example.com/post/81b2f4bf/"/>
+    <id>http://example.com/post/81b2f4bf/</id>
+    <published>2022-02-11T11:29:19.000Z</published>
+    <updated>2022-02-11T11:42:39.004Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;python基础知识与应用方向&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="人工智能" scheme="http://example.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="AI" scheme="http://example.com/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>力扣刷题记录</title>
+    <link href="http://example.com/post/8ae993b6/"/>
+    <id>http://example.com/post/8ae993b6/</id>
+    <published>2022-02-11T11:28:44.000Z</published>
+    <updated>2022-02-11T11:42:22.552Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;力扣相关题目思路与代码分享&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编程" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="编程" scheme="http://example.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>深度学习</title>
     <link href="http://example.com/post/33115a55/"/>
     <id>http://example.com/post/33115a55/</id>
     <published>2022-02-11T08:39:55.000Z</published>
-    <updated>2022-02-11T08:40:44.762Z</updated>
+    <updated>2022-02-11T11:25:50.145Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;span</summary>
-        
-      
+    <summary type="html">&lt;p&gt;记录本人深度学习历程&lt;/p&gt;</summary>
     
     
     
@@ -53,26 +142,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习</title>
-    <link href="http://example.com/post/498ab7d9/"/>
-    <id>http://example.com/post/498ab7d9/</id>
-    <published>2022-02-11T05:30:30.000Z</published>
-    <updated>2022-02-11T07:32:38.643Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;在日常学习中百度搜索总能给我们非常满意的答案，原因之一就是 百度使用的学习算法，学会了如何给网页排序。每当阅读邮件时，垃圾邮件过滤器会帮助我们过滤大量的垃圾邮件，这也是学习算法。吴恩达说：我对机器学习兴奋的原因之一就是梦想有一天能够建造像你我一样智能的 AI。我们离这个目标还很远，但是许多 AI 研究者相信实现这个目标的最好方法就是采用学习算法尝试模拟人类大脑的学习方式。&lt;/p&gt;
-&lt;p&gt;目前网上机器学习学习视频课程很多，对此做出正确的选择能省下很多时间。在此以我的个人经历推荐：首先硬着头皮去看完吴恩达的机器学习视频课程，可以说吴恩达的将的机器学习课程是最火的，没有之一。虽然吴恩达讲课时说的是英文，但网上都有中文字幕，英语差的话不开倍数还是能跟上的，毕竟吴恩达讲的内容都是很基础的东西，听完之后你可能还是不会用他所讲的那些算法（线性回归、逻辑回归、svm、决策树、PCA等）。所以看完之后可以再去看一个讲的深一点的且动手实践较多的课程，我当时看的是黑马的课程，感觉还可以。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="人工智能" scheme="http://example.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    
-    <category term="AI" scheme="http://example.com/tags/AI/"/>
     
   </entry>
   

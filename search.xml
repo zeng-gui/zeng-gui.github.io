@@ -24,14 +24,63 @@
       </tags>
   </entry>
   <entry>
-    <title>深度学习</title>
-    <url>/post/33115a55/</url>
-    <content><![CDATA[<span id="more"></span>]]></content>
+    <title>git&amp;github的使用</title>
+    <url>/post/9ff00cee/</url>
+    <content><![CDATA[<p>git和github的相关使用</p>
+<span id="more"></span>
+
+<p>有待更新……</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux基础与实操</title>
+    <url>/post/7596faec/</url>
+    <content><![CDATA[<p>Linux相关基础知识与实操</p>
+<span id="more"></span>
+
+<p>待更新……</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python基础</title>
+    <url>/post/81b2f4bf/</url>
+    <content><![CDATA[<p>python基础知识与应用方向</p>
+<span id="more"></span>
+
+<p>待更新……</p>
+]]></content>
       <categories>
         <category>人工智能</category>
       </categories>
       <tags>
         <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>力扣刷题记录</title>
+    <url>/post/8ae993b6/</url>
+    <content><![CDATA[<p>力扣相关题目思路与代码分享</p>
+<span id="more"></span>
+
+<p>待更新……</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -46,10 +95,11 @@
   <entry>
     <title>机器学习</title>
     <url>/post/498ab7d9/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在日常学习中百度搜索总能给我们非常满意的答案，原因之一就是 百度使用的学习算法，学会了如何给网页排序。每当阅读邮件时，垃圾邮件过滤器会帮助我们过滤大量的垃圾邮件，这也是学习算法。吴恩达说：我对机器学习兴奋的原因之一就是梦想有一天能够建造像你我一样智能的 AI。我们离这个目标还很远，但是许多 AI 研究者相信实现这个目标的最好方法就是采用学习算法尝试模拟人类大脑的学习方式。</p>
-<p>目前网上机器学习学习视频课程很多，对此做出正确的选择能省下很多时间。在此以我的个人经历推荐：首先硬着头皮去看完吴恩达的机器学习视频课程，可以说吴恩达的将的机器学习课程是最火的，没有之一。虽然吴恩达讲课时说的是英文，但网上都有中文字幕，英语差的话不开倍数还是能跟上的，毕竟吴恩达讲的内容都是很基础的东西，听完之后你可能还是不会用他所讲的那些算法（线性回归、逻辑回归、svm、决策树、PCA等）。所以看完之后可以再去看一个讲的深一点的且动手实践较多的课程，我当时看的是黑马的课程，感觉还可以。</p>
+    <content><![CDATA[<p>机器学习相关知识与学习经验与资源分享</p>
 <span id="more"></span>
 
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在日常学习中百度搜索总能给我们非常满意的答案，原因之一就是 百度使用的学习算法，学会了如何给网页排序。每当阅读邮件时，垃圾邮件过滤器会帮助我们过滤大量的垃圾邮件，这也是学习算法。吴恩达说：我对机器学习兴奋的原因之一就是梦想有一天能够建造像你我一样智能的 AI。我们离这个目标还很远，但是许多 AI 研究者相信实现这个目标的最好方法就是采用学习算法尝试模拟人类大脑的学习方式。</p>
+<p>目前网上机器学习学习视频课程很多，对此做出正确的选择能省下很多时间。在此以我的个人经历推荐：首先硬着头皮去看完吴恩达的机器学习视频课程，可以说吴恩达的将的机器学习课程是最火的，没有之一。虽然吴恩达讲课时说的是英文，但网上都有中文字幕，英语差的话不开倍数还是能跟上的，毕竟吴恩达讲的内容都是很基础的东西，听完之后你可能还是不会用他所讲的那些算法（线性回归、逻辑回归、svm、决策树、PCA等）。所以看完之后可以再去看一个讲的深一点的且动手实践较多的课程，我当时看的是黑马的课程，感觉还可以。</p>
 <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p>机器学习(Machine Learning)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科，专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。它是人工智能的核心，是使计算机具有智能的根本途径。例如，让机器人整齐有序的打扫房子，怎样去实现？我们要做的是让机器人观察我们完成任务的过程，从而从中学习。</p>
 <h2 id="人工智能、机器学习、深度学习、神经网络之间的关系"><a href="#人工智能、机器学习、深度学习、神经网络之间的关系" class="headerlink" title="人工智能、机器学习、深度学习、神经网络之间的关系"></a>人工智能、机器学习、深度学习、神经网络之间的关系</h2><p>人工智能(Artificial Intelligence)是研究使计算机来模拟人的某些思维过程和智能行为（如学习、推理、思考、规划等）的学科。机器学习(Machine Learning)是一门人工智能的科学，该领域的主要研究对象是人工智能，特别是如何在经验学习中改善具体算法的性能。深度学习(Deep Learning)是机器学习领域中一个新的研究方向，它被引入机器学习使其更接近最初的目标——人工智能。神经网络(Neural Network)是一种模拟人脑的神经网络以期望能够实现类人的人工智能机器学习技术，它是深度学习的基础。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200508224144868.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hVQUlfQklfVE9ORw==,size_16,color_FFFFFF,t_70" alt="img"></p>
@@ -60,6 +110,21 @@
 <h1 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h1><h2 id="吴恩达"><a href="#吴恩达" class="headerlink" title="吴恩达"></a>吴恩达</h2><h3 id="视频课程资料"><a href="#视频课程资料" class="headerlink" title="视频课程资料"></a>视频课程资料</h3><p>链接：<a href="https://pan.baidu.com/s/11gPvmLBsYUmwRPQhOFD5Ow?pwd=qvlm">https://pan.baidu.com/s/11gPvmLBsYUmwRPQhOFD5Ow?pwd=qvlm</a><br>提取码：qvlm<br>–来自百度网盘超级会员V3的分享</p>
 <h3 id="题目代码及数据文件"><a href="#题目代码及数据文件" class="headerlink" title="题目代码及数据文件"></a>题目代码及数据文件</h3><p>链接：<a href="https://pan.baidu.com/s/1O0vqIOM6vombs5SXeExqtA?pwd=ad4c">https://pan.baidu.com/s/1O0vqIOM6vombs5SXeExqtA?pwd=ad4c</a><br>提取码：ad4c<br>–来自百度网盘超级会员V3的分享</p>
 <h2 id="黑马资料"><a href="#黑马资料" class="headerlink" title="黑马资料"></a>黑马资料</h2><p>链接：<a href="https://pan.baidu.com/s/10bo75tz0bqh2r8nNBwF7Xw?pwd=mn2n">https://pan.baidu.com/s/10bo75tz0bqh2r8nNBwF7Xw?pwd=mn2n</a><br>提取码：mn2n<br>–来自百度网盘超级会员V3的分享</p>
+]]></content>
+      <categories>
+        <category>人工智能</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习</title>
+    <url>/post/33115a55/</url>
+    <content><![CDATA[<p>记录本人深度学习历程</p>
+<span id="more"></span>
+
+<p>有待更新……</p>
 ]]></content>
       <categories>
         <category>人工智能</category>
