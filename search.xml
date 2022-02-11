@@ -24,6 +24,15 @@
       </tags>
   </entry>
   <entry>
+    <title>本人博客搭建过程</title>
+    <url>/post/8e6e8b7f/</url>
+    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
+<span id="more"></span>
+
+<p>具体过程后续有时间慢慢更新</p>
+]]></content>
+  </entry>
+  <entry>
     <title>机器学习</title>
     <url>/post/498ab7d9/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在日常学习中百度搜索总能给我们非常满意的答案，原因之一就是 百度使用的学习算法，学会了如何给网页排序。每当阅读邮件时，垃圾邮件过滤器会帮助我们过滤大量的垃圾邮件，这也是学习算法。吴恩达说：我对机器学习兴奋的原因之一就是梦想有一天能够建造像你我一样智能的 AI。我们离这个目标还很远，但是许多 AI 研究者相信实现这个目标的最好方法就是采用学习算法尝试模拟人类大脑的学习方式。</p>
@@ -47,15 +56,6 @@
       <tags>
         <tag>AI</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>本人博客搭建过程</title>
-    <url>/post/8e6e8b7f/</url>
-    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
-<span id="more"></span>
-
-<p>具体过程后续有时间慢慢更新</p>
-]]></content>
   </entry>
   <entry>
     <title>深度学习</title>
