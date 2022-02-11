@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>曾桂的个人博客</title>
+  <icon>http://example.com/icon.png</icon>
+  <subtitle>记录学习的历程</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-02-11T07:32:38.643Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>曾桂</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器学习</title>
+    <link href="http://example.com/post/498ab7d9/"/>
+    <id>http://example.com/post/498ab7d9/</id>
+    <published>2022-02-11T05:30:30.000Z</published>
+    <updated>2022-02-11T07:32:38.643Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;在日常学习中百度搜索总能给我们非常满意的答案，原因之一就是 百度使用的学习算法，学会了如何给网页排序。每当阅读邮件时，垃圾邮件过滤器会帮助我们过滤大量的垃圾邮件，这也是学习算法。吴恩达说：我对机器学习兴奋的原因之一就是梦想有一天能够建造像你我一样智能的 AI。我们离这个目标还很远，但是许多 AI 研究者相信实现这个目标的最好方法就是采用学习算法尝试模拟人类大脑的学习方式。&lt;/p&gt;
+&lt;p&gt;目前网上机器学习学习视频课程很多，对此做出正确的选择能省下很多时间。在此以我的个人经历推荐：首先硬着头皮去看完吴恩达的机器学习视频课程，可以说吴恩达的将的机器学习课程是最火的，没有之一。虽然吴恩达讲课时说的是英文，但网上都有中文字幕，英语差的话不开倍数还是能跟上的，毕竟吴恩达讲的内容都是很基础的东西，听完之后你可能还是不会用他所讲的那些算法（线性回归、逻辑回归、svm、决策树、PCA等）。所以看完之后可以再去看一个讲的深一点的且动手实践较多的课程，我当时看的是黑马的课程，感觉还可以。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="人工智能" scheme="http://example.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="AI" scheme="http://example.com/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/post/4a17b156/"/>
+    <id>http://example.com/post/4a17b156/</id>
+    <published>2022-02-11T04:53:37.510Z</published>
+    <updated>2022-02-11T07:34:03.385Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hello world" scheme="http://example.com/tags/hello-world/"/>
+    
+  </entry>
+  
+</feed>
