@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-02-11T07:32:38.643Z</updated>
+  <updated>2022-02-11T08:40:44.762Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深度学习</title>
+    <link href="http://example.com/post/33115a55/"/>
+    <id>http://example.com/post/33115a55/</id>
+    <published>2022-02-11T08:39:55.000Z</published>
+    <updated>2022-02-11T08:40:44.762Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能" scheme="http://example.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="AI" scheme="http://example.com/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>本人博客搭建过程</title>
+    <link href="http://example.com/post/8e6e8b7f/"/>
+    <id>http://example.com/post/8e6e8b7f/</id>
+    <published>2022-02-11T08:28:07.000Z</published>
+    <updated>2022-02-11T08:38:28.678Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>机器学习</title>
