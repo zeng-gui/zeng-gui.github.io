@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>linux基础与实操</title>
+    <url>/post/7596faec/</url>
+    <content><![CDATA[<p>Linux相关基础知识与实操</p>
+<span id="more"></span>
+
+<p>待更新……</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/post/4a17b156/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -24,36 +39,6 @@
       </tags>
   </entry>
   <entry>
-    <title>git&amp;github的使用</title>
-    <url>/post/9ff00cee/</url>
-    <content><![CDATA[<p>git和github的相关使用</p>
-<span id="more"></span>
-
-<p>有待更新……</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux基础与实操</title>
-    <url>/post/7596faec/</url>
-    <content><![CDATA[<p>Linux相关基础知识与实操</p>
-<span id="more"></span>
-
-<p>待更新……</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>python基础</title>
     <url>/post/81b2f4bf/</url>
     <content><![CDATA[<p>python基础知识与应用方向</p>
@@ -66,6 +51,21 @@
       </categories>
       <tags>
         <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git&amp;github的使用</title>
+    <url>/post/9ff00cee/</url>
+    <content><![CDATA[<p>git和github的相关使用</p>
+<span id="more"></span>
+
+<p>有待更新……</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
