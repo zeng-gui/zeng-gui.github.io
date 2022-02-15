@@ -69,18 +69,28 @@
       </tags>
   </entry>
   <entry>
-    <title>力扣刷题记录</title>
+    <title>LeetCode刷题记录</title>
     <url>/post/8ae993b6/</url>
     <content><![CDATA[<p>力扣相关题目思路与代码分享</p>
 <span id="more"></span>
 
+<h1 id="733-图像渲染"><a href="#733-图像渲染" class="headerlink" title="#733 图像渲染"></a>#733 图像渲染</h1><p>有一幅以二维整数数组表示的图画，每一个整数表示该图画的像素值大小，数值在 0 到 65535 之间。给你一个坐标 (sr, sc) 表示图像渲染开始的像素值（行 ，列）和一个新的颜色值 newColor，让你重新上色这幅图像。为了完成上色工作，从初始坐标开始，记录初始坐标的上下左右四个方向上像素值与初始坐标相同的相连像素点，接着再记录这四个方向上符合条件的像素点与他们对应四个方向上像素值与初始坐标相同的相连像素点，……，重复该过程。将所有有记录的像素点的颜色值改为新的颜色值。最后返回经过上色渲染后的图像。</p>
+<h2 id="方法1：深度优先搜索-队列"><a href="#方法1：深度优先搜索-队列" class="headerlink" title="方法1：深度优先搜索 + 队列"></a>方法1：深度优先搜索 + 队列</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ul>
+<li>先确定首先搜索的方向（这里是上），首先染色的是这个方向上所有符合的点，之后再是其他方向</li>
+<li>先将初始节点进队</li>
+<li>首先出队的是初始节点，给它上色；再按方向顺序将符合条件的点进队</li>
+</ul>
+<p>总之就是一个方向一个方向的来，先将一个方向上符合条件的点上色完，再上色其他方向</p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Solution:</span><br><span class="line"></span><br><span class="line">def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -&gt; List[List[int]]:</span><br><span class="line">    if newColor == image[sr][sc]:</span><br><span class="line">        return image</span><br><span class="line">    older = image[sr][sc]</span><br><span class="line">    que = [(sr,sc)]</span><br><span class="line">    while que:</span><br><span class="line">        point = que.pop() #出队</span><br><span class="line">        image[point[0]][point[1]] = newColor</span><br><span class="line">        for new_x,new_y in zip((point[0],point[0],point[0]-1,point[0]+1),(point[1]+1,point[1]-1,point[1],point[1])):</span><br><span class="line">            if 0 &lt;= new_x &lt;len(image) and 0 &lt;= new_y &lt;len(image[0]) and image[new_x][new_y] == older:             </span><br><span class="line">                             #图像行数                  图像列数</span><br><span class="line">                que.insert(0,(new_x,new_y)) #符合条件的进队</span><br><span class="line">    return image</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="方法2：广度优先搜索-队列"><a href="#方法2：广度优先搜索-队列" class="headerlink" title="方法2：广度优先搜索 + 队列"></a>方法2：广度优先搜索 + 队列</h2><p>与深度优先搜索的区别在于广度优先搜索是先将初始节点上色，再将初始节点周围的节点上色，如此一层一层向外扩散。代码只需将深搜代码稍作改动即可（略）</p>
 <p>待更新……</p>
 ]]></content>
       <categories>
         <category>编程</category>
       </categories>
       <tags>
-        <tag>编程</tag>
+        <tag>LeetCode</tag>
       </tags>
   </entry>
   <entry>
