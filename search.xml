@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>linux基础与实操</title>
-    <url>/post/7596faec/</url>
-    <content><![CDATA[<p>Linux相关基础知识与实操</p>
-<span id="more"></span>
-
-<p>待更新……</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git&amp;github的使用</title>
-    <url>/post/9ff00cee/</url>
-    <content><![CDATA[<p>git和github的相关使用</p>
-<span id="more"></span>
-
-<p>有待更新……</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/post/4a17b156/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -51,6 +21,60 @@
 ]]></content>
       <tags>
         <tag>hello world</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux基础与实操</title>
+    <url>/post/7596faec/</url>
+    <content><![CDATA[<p>Linux相关基础知识与实操</p>
+<span id="more"></span>
+
+<h1 id="本人Linux学习历程"><a href="#本人Linux学习历程" class="headerlink" title="本人Linux学习历程"></a>本人Linux学习历程</h1><p>我首先接触Linux相关知识实在大一下学期后的暑假，是在机器人社团的一位大佬学长给的一些资料上学习了一些基本使用，当时使用的工具为VMware15虚拟机软件和Ubuntu18镜像，后来自己买了一个树莓派4B的开发板使用的树莓派官方镜像。到此时还只会一些Linux基础部分（相关工具的安装与使用、部分常用的使用指令、目录结构等），对用户管理管理、组管理、进程管理、任务调度、磁盘分区、网络配置等知识和使用基本上是一片空白；后来看过一些黑马的Linux课程，但也并不完整，主要是一些基本配置和指令的使用。因此后来等到寒假在家有时间才完整的看完了一整个课程视频，看的是尚硅谷的Linux课程（后附课件文件）。</p>
+<h1 id="Linux概述"><a href="#Linux概述" class="headerlink" title="Linux概述"></a>Linux概述</h1><p>Linux是基于Unix的开源免费的操作系统，由于系统的稳定性和安全性几乎成为程序代码运行的最佳系统环境。Linux是由Linus Torvalds（林纳斯·托瓦兹）起初开发的，由于源代码的开放性，现在已经衍生出了成千上百种不同的Linux系统。</p>
+<p>Linux系统的应用非常广泛，不仅可以长时间的运行我们编写的程序代码，还可以安装在各种计算机硬件设备中，比如手机、平板电脑、路由器等。尤其在这里提及一下，我们熟知是Android程序最底层就是运行在linux系统</p>
+<h1 id="Linux的分类"><a href="#Linux的分类" class="headerlink" title="Linux的分类"></a>Linux的分类</h1><p>(1)Linux根据市场需求不同，基本分为两个方向：<br>1）图形化界面版：注重用户体验，类似window操作系统，但目前成熟度不够<br>2）服务器版：没有好看的界面，是以在控制台窗口中输入命令操作系统的，类似 于DOS，是我们架设服务器的最佳选择</p>
+<p>(2)Linux根据原生程度，又分为两种：<br>1）内核版本：在Linus领导下的内核小组开发维护的系统内核的版本号<br>2）发行版本：一些组织或公司在内核版基础上进行二次开发而重新发行的版本</p>
+<p>(3)Linux发行版本不同，又可以分为n多种：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200612110553792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW90YWkxMjM0,size_16,color_FFFFFF,t_70#pic_center" alt="img"></p>
+<h1 id="Linux的安装"><a href="#Linux的安装" class="headerlink" title="Linux的安装"></a>Linux的安装</h1><h2 id="虚拟机的安装（软件）"><a href="#虚拟机的安装（软件）" class="headerlink" title="虚拟机的安装（软件）"></a>虚拟机的安装（软件）</h2><p>因为Linux也是一个系统，本质上跟我们电脑的Window没有区别，所以我们要学习Linux就首先将我们电脑的Window系统换成Linux系统，或者在我们电脑上安装双系统，听上去是不是很可怕。其实我们可以在我们电脑上安装一个软件，这个软甲可以模拟一台或多台虚拟的电脑机器，这就是虚拟机</p>
+<p>虚拟器常用的有两种：<br>VMware（威睿）公司的虚拟机软件，功能强大，收费产品<br>VitrualBox 虚拟机软件 Oracle公司的虚拟机软件，免费商品<br>（本人使用的是VMware，后附安装包）</p>
+<h2 id="远程工具"><a href="#远程工具" class="headerlink" title="远程工具"></a>远程工具</h2><p>实际开发中，Linux服务器都在其他的地方，我们要通过远程的方式去连接Linux并操作它，Linux远程的操作工具有很多，本人使用的远程连接工具有:Putty、Xshell</p>
+<p>文件传输工具：Xftp、FileZilla Client</p>
+<h1 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h1><h2 id="尚硅谷Linux课程课件文档："><a href="#尚硅谷Linux课程课件文档：" class="headerlink" title="尚硅谷Linux课程课件文档："></a>尚硅谷Linux课程课件文档：</h2><p>链接：<a href="https://pan.baidu.com/s/1tTkI0qfwelmN3Zt_vuc01w?pwd=2dnj">https://pan.baidu.com/s/1tTkI0qfwelmN3Zt_vuc01w?pwd=2dnj</a><br>提取码：2dnj<br>–来自百度网盘超级会员V3的分享</p>
+<h2 id="VMware15安装包及教程资料"><a href="#VMware15安装包及教程资料" class="headerlink" title="VMware15安装包及教程资料"></a>VMware15安装包及教程资料</h2><p>链接：<a href="https://pan.baidu.com/s/1nez3Rtjt4fgUJj18kJDe6w?pwd=w79s">https://pan.baidu.com/s/1nez3Rtjt4fgUJj18kJDe6w?pwd=w79s</a><br>提取码：w79s<br>–来自百度网盘超级会员V3的分享</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git&amp;github的使用</title>
+    <url>/post/9ff00cee/</url>
+    <content><![CDATA[<p>git和github的相关使用</p>
+<span id="more"></span>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>建议先学一些Linux基础后再学git，因为git所用的指令为Linux指令，只不过在前面加了个git。推荐去看尚硅谷的相关课程，尚硅谷是个很不错的学习平台，很多学习资源都是免费的，关键是内容讲解逻辑性很强，易懂。（后附相关资料）</p>
+<h1 id="git和github概述"><a href="#git和github概述" class="headerlink" title="git和github概述"></a>git和github概述</h1><h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>Git 是一个免费的、开源的分布式版本控制系统，可以快速高效地处理从小型到大型的各种</p>
+<p>项目。</p>
+<p>Git 易于学习，占地面积小，性能极快。 </p>
+<p>它具有廉价的本地库，方便的暂存区域和多个工作</p>
+<p>流分支等特性。其性能优于 Subversion、CVS、Perforce 和 ClearCase 等版本控制工具。</p>
+<h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><p>GitHub是一个面向<a href="https://baike.baidu.com/item/%E5%BC%80%E6%BA%90/20720669">开源</a>及私有<a href="https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6/12053">软件</a>项目的托管平台，因为只支持Git作为唯一的版本库格式进行托管，故名GitHub。</p>
+<h1 id="git和github的区别"><a href="#git和github的区别" class="headerlink" title="git和github的区别"></a>git和github的区别</h1><p>Git是一个分布式版本控制系统，简单的说就是一个软件，用于记录一个或若干文件内容变化，以便来查阅特定版本修订情况的软件。</p>
+<p>Github是一个为用户提供Git服务的网站，简单说就是一个可以放代码的地方（也可以放其他内容）。Github除了提供管理Git的web界面外，还提供了订阅、关注、讨论组】在线编辑器等丰富的功能。</p>
+<p>Git 并不像 SVN 那样有个中心服务器。</p>
+<p>目前我们使用到的 Git 命令都是在本地执行，如果你想通过 Git 分享你的代码或者与其他开发人员合作。 你就需要将数据放到一台其他开发人员能够连接的服务器上。</p>
+<h2 id="git安装教程"><a href="#git安装教程" class="headerlink" title="git安装教程"></a>git安装教程</h2><p><a href="https://www.runoob.com/git/git-install-setup.html">Git的安装</a></p>
+<h1 id="相关基础知识及实际操作文档"><a href="#相关基础知识及实际操作文档" class="headerlink" title="相关基础知识及实际操作文档"></a>相关基础知识及实际操作文档</h1><p>链接：<a href="https://pan.baidu.com/s/17Kffhu0kRSqzQPmG4aGvkw?pwd=nslu">https://pan.baidu.com/s/17Kffhu0kRSqzQPmG4aGvkw?pwd=nslu</a><br>提取码：nslu<br>–来自百度网盘超级会员V3的分享</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -75,16 +99,42 @@
 <span id="more"></span>
 
 <h1 id="733-图像渲染"><a href="#733-图像渲染" class="headerlink" title="#733 图像渲染"></a>#733 图像渲染</h1><p>有一幅以二维整数数组表示的图画，每一个整数表示该图画的像素值大小，数值在 0 到 65535 之间。给你一个坐标 (sr, sc) 表示图像渲染开始的像素值（行 ，列）和一个新的颜色值 newColor，让你重新上色这幅图像。为了完成上色工作，从初始坐标开始，记录初始坐标的上下左右四个方向上像素值与初始坐标相同的相连像素点，接着再记录这四个方向上符合条件的像素点与他们对应四个方向上像素值与初始坐标相同的相连像素点，……，重复该过程。将所有有记录的像素点的颜色值改为新的颜色值。最后返回经过上色渲染后的图像。</p>
-<h2 id="方法1：深度优先搜索-队列"><a href="#方法1：深度优先搜索-队列" class="headerlink" title="方法1：深度优先搜索 + 队列"></a>方法1：深度优先搜索 + 队列</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ul>
+<h2 id="方法1：深度优先搜索-队列"><a href="#方法1：深度优先搜索-队列" class="headerlink" title="方法1：深度优先搜索 + 队列"></a>方法1：深度优先搜索 + 队列</h2><h3 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h3><ul>
 <li>先确定首先搜索的方向（这里是上），首先染色的是这个方向上所有符合的点，之后再是其他方向</li>
 <li>先将初始节点进队</li>
 <li>首先出队的是初始节点，给它上色；再按方向顺序将符合条件的点进队</li>
 </ul>
 <p>总之就是一个方向一个方向的来，先将一个方向上符合条件的点上色完，再上色其他方向</p>
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Solution:</span><br><span class="line"></span><br><span class="line">def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -&gt; List[List[int]]:</span><br><span class="line">    if newColor == image[sr][sc]:</span><br><span class="line">        return image</span><br><span class="line">    older = image[sr][sc]</span><br><span class="line">    que = [(sr,sc)]</span><br><span class="line">    while que:</span><br><span class="line">        point = que.pop() #出队</span><br><span class="line">        image[point[0]][point[1]] = newColor</span><br><span class="line">        for new_x,new_y in zip((point[0],point[0],point[0]-1,point[0]+1),(point[1]+1,point[1]-1,point[1],point[1])):</span><br><span class="line">            if 0 &lt;= new_x &lt;len(image) and 0 &lt;= new_y &lt;len(image[0]) and image[new_x][new_y] == older:             </span><br><span class="line">                             #图像行数                  图像列数</span><br><span class="line">                que.insert(0,(new_x,new_y)) #符合条件的进队</span><br><span class="line">    return image</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><details>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">floodFill</span>(<span class="params">self, image: <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]], sr: <span class="built_in">int</span>, sc: <span class="built_in">int</span>, newColor: <span class="built_in">int</span></span>) -&gt; <span class="type">List</span>[<span class="type">List</span>[<span class="built_in">int</span>]]:</span><br><span class="line">        <span class="keyword">if</span> newColor == image[sr][sc]:</span><br><span class="line">            <span class="keyword">return</span> image</span><br><span class="line">        older = image[sr][sc]</span><br><span class="line">        que = [(sr,sc)]</span><br><span class="line">        <span class="keyword">while</span> que:</span><br><span class="line">            point = que.pop() <span class="comment">#出队</span></span><br><span class="line">            image[point[<span class="number">0</span>]][point[<span class="number">1</span>]] = newColor</span><br><span class="line">            <span class="keyword">for</span> new_x,new_y <span class="keyword">in</span> <span class="built_in">zip</span>((point[<span class="number">0</span>],point[<span class="number">0</span>],point[<span class="number">0</span>]-<span class="number">1</span>,point[<span class="number">0</span>]+<span class="number">1</span>),(point[<span class="number">1</span>]+<span class="number">1</span>,point[<span class="number">1</span>]-<span class="number">1</span>,point[<span class="number">1</span>],point[<span class="number">1</span>])):</span><br><span class="line">                <span class="keyword">if</span> <span class="number">0</span> &lt;= new_x &lt;<span class="built_in">len</span>(image) <span class="keyword">and</span> <span class="number">0</span> &lt;= new_y &lt;<span class="built_in">len</span>(image[<span class="number">0</span>]) <span class="keyword">and</span> image[new_x][new_y] == older:             </span><br><span class="line">                                 <span class="comment"># 图像行数                  图像列数</span></span><br><span class="line"></span><br><span class="line">                    que.insert(<span class="number">0</span>,(new_x,new_y)) <span class="comment">#符合条件的进队</span></span><br><span class="line">        <span class="keyword">return</span> image</span><br></pre></td></tr></table></figure>
+
+</details>
 
 <h2 id="方法2：广度优先搜索-队列"><a href="#方法2：广度优先搜索-队列" class="headerlink" title="方法2：广度优先搜索 + 队列"></a>方法2：广度优先搜索 + 队列</h2><p>与深度优先搜索的区别在于广度优先搜索是先将初始节点上色，再将初始节点周围的节点上色，如此一层一层向外扩散。代码只需将深搜代码稍作改动即可（略）</p>
-<p>待更新……</p>
+<h1 id="3-无重复字符的最长子串"><a href="#3-无重复字符的最长子串" class="headerlink" title="3.无重复字符的最长子串"></a>3.无重复字符的最长子串</h1><p>给定一个字符串 <code>s</code> ，请你找出其中不含有重复字符的<code>最长子串</code>的长度。</p>
+<h2 id="方法：滑动窗口加队列"><a href="#方法：滑动窗口加队列" class="headerlink" title="方法：滑动窗口加队列"></a>方法：滑动窗口加队列</h2><h3 id="思路：-1"><a href="#思路：-1" class="headerlink" title="思路："></a>思路：</h3><p>首先定义一个空列表做为一个队列，以此队列为窗口；然后遍历字符串，若遍历到的字符在队列中没有出现则直接将其进队，若队列中有出现将队列中的字符出队直到队列中没有该字符时再将它进队。如此实现窗口的不断向右移动，窗口每移动一次便与上一次的窗口长度相比较，保留长度最长的窗口长度。</p>
+<h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h3><details>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">lengthOfLongestSubstring</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        new,l = [],<span class="number">0</span>  <span class="comment"># 以new作为移动的窗口（队列），l记录最长窗口长度</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(s)):</span><br><span class="line">            <span class="keyword">while</span> s[i] <span class="keyword">in</span> new:</span><br><span class="line">                new.pop(<span class="number">0</span>)  <span class="comment"># 若有重复则出队，直至无重复为止</span></span><br><span class="line">            new.append(s[i])  <span class="comment"># 进队</span></span><br><span class="line">            l = <span class="built_in">max</span>(<span class="built_in">len</span>(new),l)  <span class="comment"># 保留最长窗口长度</span></span><br><span class="line">        <span class="keyword">return</span> l</span><br></pre></td></tr></table></figure>
+
+</details>
+
+<h1 id="283-移动零"><a href="#283-移动零" class="headerlink" title="283.移动零"></a>283.移动零</h1><p>给定一个数组 <code>nums</code>，编写一个函数将所有 <code>0</code> 移动到数组的末尾，同时保持非零元素的相对顺序。</p>
+<p><strong>请注意</strong> ，必须在不复制数组的情况下原地对数组进行操作。</p>
+<h2 id="方法：双指针"><a href="#方法：双指针" class="headerlink" title="方法：双指针"></a>方法：双指针</h2><h3 id="思路：-2"><a href="#思路：-2" class="headerlink" title="思路："></a>思路：</h3><p>使用双指针，左指针指向当前已经处理好的序列的尾部，右指针指向待处理序列的头部。右指针不断向右移动，每次右指针指向非零数，则将左右指针对应的数交换，同时左指针右移。</p>
+<p>在此过程中，左指针左边均为非零数，右指针左边直到左指针处均为零。所以每次都是将左指针的零与右指针的非零数交换，且非零数的相对顺序并未改变。</p>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><details>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">moveZeroes</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        Do not return anything, modify nums in-place instead.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        l = r = <span class="number">0</span>  <span class="comment"># 定义左（l）右（r）指针</span></span><br><span class="line">        <span class="keyword">while</span> r &lt; <span class="built_in">len</span>(nums):</span><br><span class="line">            <span class="keyword">if</span> nums[r] !=<span class="number">0</span>:</span><br><span class="line">                nums[l],nums[r] = nums[r],nums[l]  <span class="comment"># 右指针非零则将左右指针对应的数交换</span></span><br><span class="line">                l+=<span class="number">1</span></span><br><span class="line">            r+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+</details>
+
+
+
+
+
+<p>后续待更新……</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -94,22 +144,13 @@
       </tags>
   </entry>
   <entry>
-    <title>本人博客搭建过程</title>
-    <url>/post/8e6e8b7f/</url>
-    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
-<span id="more"></span>
-
-<p>具体过程后续有时间慢慢更新</p>
-]]></content>
-  </entry>
-  <entry>
     <title>机器学习</title>
     <url>/post/498ab7d9/</url>
     <content><![CDATA[<p>机器学习相关知识与学习经验与资源分享</p>
 <span id="more"></span>
 
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在日常学习中百度搜索总能给我们非常满意的答案，原因之一就是 百度使用的学习算法，学会了如何给网页排序。每当阅读邮件时，垃圾邮件过滤器会帮助我们过滤大量的垃圾邮件，这也是学习算法。吴恩达说：我对机器学习兴奋的原因之一就是梦想有一天能够建造像你我一样智能的 AI。我们离这个目标还很远，但是许多 AI 研究者相信实现这个目标的最好方法就是采用学习算法尝试模拟人类大脑的学习方式。</p>
-<p>目前网上机器学习学习视频课程很多，对此做出正确的选择能省下很多时间。在此以我的个人经历推荐：首先硬着头皮去看完吴恩达的机器学习视频课程，可以说吴恩达的将的机器学习课程是最火的，没有之一。虽然吴恩达讲课时说的是英文，但网上都有中文字幕，英语差的话不开倍数还是能跟上的，毕竟吴恩达讲的内容都是很基础的东西，听完之后你可能还是不会用他所讲的那些算法（线性回归、逻辑回归、svm、决策树、PCA等）。所以看完之后可以再去看一个讲的深一点的且动手实践较多的课程，我当时看的是黑马的课程，感觉还可以。</p>
+<p>目前网上机器学习的学习视频课程很多，对此做出正确的选择能省下很多时间。在此以我的个人经历推荐：首先硬着头皮去看完吴恩达的机器学习视频课程，可以说吴恩达讲的机器学习课程是最火的，没有之一。虽然吴恩达讲课时说的是英文，但网上都有中文字幕，英语差的话不开倍数还是能跟上的，毕竟吴恩达讲的内容都是很基础的东西，听完之后你可能还是不会用他所讲的那些算法（线性回归、逻辑回归、svm、决策树、PCA等）。所以看完之后可以再去看一个讲的深一点的且动手实践较多的课程，我当时看的是黑马的课程，感觉还可以。</p>
 <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p>机器学习(Machine Learning)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科，专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。它是人工智能的核心，是使计算机具有智能的根本途径。例如，让机器人整齐有序的打扫房子，怎样去实现？我们要做的是让机器人观察我们完成任务的过程，从而从中学习。</p>
 <h2 id="人工智能、机器学习、深度学习、神经网络之间的关系"><a href="#人工智能、机器学习、深度学习、神经网络之间的关系" class="headerlink" title="人工智能、机器学习、深度学习、神经网络之间的关系"></a>人工智能、机器学习、深度学习、神经网络之间的关系</h2><p>人工智能(Artificial Intelligence)是研究使计算机来模拟人的某些思维过程和智能行为（如学习、推理、思考、规划等）的学科。机器学习(Machine Learning)是一门人工智能的科学，该领域的主要研究对象是人工智能，特别是如何在经验学习中改善具体算法的性能。深度学习(Deep Learning)是机器学习领域中一个新的研究方向，它被引入机器学习使其更接近最初的目标——人工智能。神经网络(Neural Network)是一种模拟人脑的神经网络以期望能够实现类人的人工智能机器学习技术，它是深度学习的基础。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200508224144868.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hVQUlfQklfVE9ORw==,size_16,color_FFFFFF,t_70" alt="img"></p>
@@ -129,12 +170,33 @@
       </tags>
   </entry>
   <entry>
-    <title>深度学习</title>
-    <url>/post/33115a55/</url>
-    <content><![CDATA[<p>记录本人深度学习历程</p>
+    <title>本人博客搭建过程</title>
+    <url>/post/8e6e8b7f/</url>
+    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
 <span id="more"></span>
 
-<p>有待更新……</p>
+<p>具体过程后续有时间慢慢更新</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>深度学习</title>
+    <url>/post/33115a55/</url>
+    <content><![CDATA[<p>深度学习相关知识……</p>
+<span id="more"></span>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是先学完机器学习后再学深度学习的。个人推荐深度学习还是先看吴恩达的深度学习视频一共有五套视频，讲的非常基础，之后有时间可以根据需要去看一些讲的深点的视频。我是开始就看的黑马的课程，讲的比较全且较深，开始还好，到后面有些知识点可能要花点时间去理解。在我看黑马的视频看的差不多后在老师推荐下去看了看吴恩达的课程，不过因为已经学过了此时再去看就比较无趣了，感觉他讲的东西太基础太简单了，所以我只是选择性的看了一些，并未看完。</p>
+<h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><p>深度学习（deep learning）是机器学习的分支，是一种试图使用包含复杂结构或由多重非线性变换构成的多个处理层对数据进行高层抽象的算法。 深度学习是机器学习中一种基于对数据进行表征学习的算法，至今已有数种深度学习框架，如卷积神经网络和深度置信网络和递归神经网络等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。</p>
+<p>深度学习是机器学习中一种基于对数据进行表征学习的算法。观测值（例如一幅图像）可以使用多种方式来表示，如每个像素强度值的向量，或者更抽象地表示成一系列边、特定形状的区域等。而使用某些特定的表示方法更容易从实例中学习任务（例如，人脸识别或面部表情识别）。</p>
+<p>至今已有数种深度学习框架，如卷积神经网络和深度置信网络和递归神经网络等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。</p>
+<h1 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h1><p>深度学习框架，尤其是基于人工神经网络的框架可以追溯到1980年福岛邦彦提出的新认知机，而人工神经网络的历史则更为久远，甚至可以追溯到公元前亚里士多德为了解释人类大脑的运行规律而提出的联想主义心理学。1989年，扬·勒丘恩（Yann LeCun）等人开始将1974年提出的标准反向传播算法应用于深度神经网络，这一网络被用于手写邮政编码识别，并且在美国成功地被银行商业化应用了，轰动一时。2007年前后，杰弗里·辛顿和鲁斯兰·萨拉赫丁诺夫（Ruslan Salakhutdinov）提出了一种在前馈神经网络中进行有效训练的算法。这一算法将网络中的每一层视为无监督的受限玻尔兹曼机（RBM），再使用有监督的反向传播算法进行调优。之后，由Hinton等人创造的深度置信网络（DBN）指出，RBM可以以贪婪的方式进行堆叠和训练，也掀起了深度学习的研究热潮。2009年，又进一步提出Deep Boltzmann Machine，它与DBN的区别在于，DBM允许在底层中双向连接。因此，用DBM表示堆叠的RBM，比用DBN好得多。</p>
+<p>下表罗列了深度学习发展历史上的里程碑：</p>
+<p><img src="https://image.jiqizhixin.com/uploads/editor/049ef6b5-21e7-4596-8f22-242a9303cea0/1523891912559.jpg" alt="img"></p>
+<p>[表格来源：论文On the origin of deep learning；URL：<a href="https://arxiv.org/pdf/1702.07800.pdf">https://arxiv.org/pdf/1702.07800.pdf</a>]</p>
+<p>随着深度学习的高速发展，出现了大量的新模型与架构, 这些架构在不同领域发挥着重要作用：</p>
+<h2 id="卷积神经网络（CNN）"><a href="#卷积神经网络（CNN）" class="headerlink" title="卷积神经网络（CNN）"></a>卷积神经网络（CNN）</h2><p>除了包含执行目标识别任务的 AlexNet（2012年Imagenet冠军） 等深度卷积网络，还包括很多优秀的模型用于处理目标检测、语义分割和超分辨率等任务。它们以不同的方式应用卷积过程处理不同的任务，并在这些任务上产生了非常好的效果。从基本上来说，卷积相对于最初的全连接网络有很多优秀的属性，例如它只和上一层神经元产生部分的连接，同一个卷积核可以在输入张量上重复使用，也就是说特征检测器可以在输入图像上重复检测是否有该局部特征。这是卷积网络十分优秀的属性，它大大减少了两层间参数的数量。</p>
+<h2 id="循环神经网络（RNN）"><a href="#循环神经网络（RNN）" class="headerlink" title="循环神经网络（RNN）"></a>循环神经网络（RNN）</h2><p>是深度学习的重要组成部分，它可以让神经网络处理诸如文本、音频和视频等序列数据。它们可用来做序列的高层语义理解、序列标记，甚至可以从一个片段生产新的序列。目前有很多人工智能应用都依赖于循环深度神经网络，在谷歌（语音搜索）、百度（DeepSpeech）和亚马逊的产品中都能看到 RNN 的身影。基本的 RNN 结构难以处理长序列，然而一种特殊的 RNN 变种即「长短时记忆（LSTM）」网络可以很好地处理长序列问题。这种模型能力强大，在翻译、语音识别和图像描述等众多任务中均取得里程碑式的效果。因而，循环神经网络在最近几年得到了广泛使用。</p>
+<h1 id="瓶颈"><a href="#瓶颈" class="headerlink" title="瓶颈"></a>瓶颈</h1><p>对深度学习的主要批评是许多方法缺乏理论支撑。大多数深度结构仅仅是梯度下降的某些变式。尽管梯度下降已经被充分地研究，但理论涉及的其他算法，例如对比分歧算法，并没有获得充分的研究，其收敛性等问题仍不明确。深度学习方法常常被视为黑盒，大多数的结论确认都由经验而非理论来确定。</p>
+<p>也有学者认为，深度学习应当被视为通向真正人工智能的一条途径，而不是一种包罗万象的解决方案。尽管深度学习的能力很强，但和真正的人工智能相比，仍然缺乏诸多重要的能力。</p>
 ]]></content>
       <categories>
         <category>人工智能</category>
