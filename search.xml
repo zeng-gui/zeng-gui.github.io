@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/post/4a17b156/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>hello world</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git&amp;github的使用</title>
     <url>/post/9ff00cee/</url>
     <content><![CDATA[<p>git和github的相关使用</p>
@@ -48,6 +25,59 @@
       </categories>
       <tags>
         <tag>git&amp;github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/4a17b156/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>hello world</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python基础</title>
+    <url>/post/81b2f4bf/</url>
+    <content><![CDATA[<p>python基础知识与应用方向</p>
+<span id="more"></span>
+
+<p>待更新……</p>
+]]></content>
+      <categories>
+        <category>人工智能</category>
+      </categories>
+      <tags>
+        <tag>AI/Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本人博客搭建过程</title>
+    <url>/post/8e6e8b7f/</url>
+    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
+<span id="more"></span>
+
+<p>具体过程后续有时间慢慢更新</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -129,33 +159,30 @@
       </tags>
   </entry>
   <entry>
-    <title>本人博客搭建过程</title>
-    <url>/post/8e6e8b7f/</url>
-    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
+    <title>深度学习</title>
+    <url>/post/33115a55/</url>
+    <content><![CDATA[<p>深度学习相关知识……</p>
 <span id="more"></span>
 
-<p>具体过程后续有时间慢慢更新</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python基础</title>
-    <url>/post/81b2f4bf/</url>
-    <content><![CDATA[<p>python基础知识与应用方向</p>
-<span id="more"></span>
-
-<p>待更新……</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是先学完机器学习后再学深度学习的。个人推荐深度学习还是先看吴恩达的深度学习视频一共有五套视频，讲的非常基础，之后有时间可以根据需要去看一些讲的深点的视频。我是开始就看的黑马的课程，讲的比较全且较深，开始还好，到后面有些知识点可能要花点时间去理解。在我看黑马的视频看的差不多后在老师推荐下去看了看吴恩达的课程，不过因为已经学过了此时再去看就比较无趣了，感觉他讲的东西太基础太简单了，所以我只是选择性的看了一些，并未看完。</p>
+<h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><p>深度学习（deep learning）是机器学习的分支，是一种试图使用包含复杂结构或由多重非线性变换构成的多个处理层对数据进行高层抽象的算法。 深度学习是机器学习中一种基于对数据进行表征学习的算法，至今已有数种深度学习框架，如卷积神经网络和深度置信网络和递归神经网络等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。</p>
+<p>深度学习是机器学习中一种基于对数据进行表征学习的算法。观测值（例如一幅图像）可以使用多种方式来表示，如每个像素强度值的向量，或者更抽象地表示成一系列边、特定形状的区域等。而使用某些特定的表示方法更容易从实例中学习任务（例如，人脸识别或面部表情识别）。</p>
+<p>至今已有数种深度学习框架，如卷积神经网络和深度置信网络和递归神经网络等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。</p>
+<h1 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h1><p>深度学习框架，尤其是基于人工神经网络的框架可以追溯到1980年福岛邦彦提出的新认知机，而人工神经网络的历史则更为久远，甚至可以追溯到公元前亚里士多德为了解释人类大脑的运行规律而提出的联想主义心理学。1989年，扬·勒丘恩（Yann LeCun）等人开始将1974年提出的标准反向传播算法应用于深度神经网络，这一网络被用于手写邮政编码识别，并且在美国成功地被银行商业化应用了，轰动一时。2007年前后，杰弗里·辛顿和鲁斯兰·萨拉赫丁诺夫（Ruslan Salakhutdinov）提出了一种在前馈神经网络中进行有效训练的算法。这一算法将网络中的每一层视为无监督的受限玻尔兹曼机（RBM），再使用有监督的反向传播算法进行调优。之后，由Hinton等人创造的深度置信网络（DBN）指出，RBM可以以贪婪的方式进行堆叠和训练，也掀起了深度学习的研究热潮。2009年，又进一步提出Deep Boltzmann Machine，它与DBN的区别在于，DBM允许在底层中双向连接。因此，用DBM表示堆叠的RBM，比用DBN好得多。</p>
+<p>下表罗列了深度学习发展历史上的里程碑：</p>
+<p><img data-src="https://image.jiqizhixin.com/uploads/editor/049ef6b5-21e7-4596-8f22-242a9303cea0/1523891912559.jpg" alt="img"></p>
+<p>[表格来源：论文On the origin of deep learning；URL：<a href="https://arxiv.org/pdf/1702.07800.pdf">https://arxiv.org/pdf/1702.07800.pdf</a>]</p>
+<p>随着深度学习的高速发展，出现了大量的新模型与架构, 这些架构在不同领域发挥着重要作用：</p>
+<h2 id="卷积神经网络（CNN）"><a href="#卷积神经网络（CNN）" class="headerlink" title="卷积神经网络（CNN）"></a>卷积神经网络（CNN）</h2><p>除了包含执行目标识别任务的 AlexNet（2012年Imagenet冠军） 等深度卷积网络，还包括很多优秀的模型用于处理目标检测、语义分割和超分辨率等任务。它们以不同的方式应用卷积过程处理不同的任务，并在这些任务上产生了非常好的效果。从基本上来说，卷积相对于最初的全连接网络有很多优秀的属性，例如它只和上一层神经元产生部分的连接，同一个卷积核可以在输入张量上重复使用，也就是说特征检测器可以在输入图像上重复检测是否有该局部特征。这是卷积网络十分优秀的属性，它大大减少了两层间参数的数量。</p>
+<h2 id="循环神经网络（RNN）"><a href="#循环神经网络（RNN）" class="headerlink" title="循环神经网络（RNN）"></a>循环神经网络（RNN）</h2><p>是深度学习的重要组成部分，它可以让神经网络处理诸如文本、音频和视频等序列数据。它们可用来做序列的高层语义理解、序列标记，甚至可以从一个片段生产新的序列。目前有很多人工智能应用都依赖于循环深度神经网络，在谷歌（语音搜索）、百度（DeepSpeech）和亚马逊的产品中都能看到 RNN 的身影。基本的 RNN 结构难以处理长序列，然而一种特殊的 RNN 变种即「长短时记忆（LSTM）」网络可以很好地处理长序列问题。这种模型能力强大，在翻译、语音识别和图像描述等众多任务中均取得里程碑式的效果。因而，循环神经网络在最近几年得到了广泛使用。</p>
+<h1 id="瓶颈"><a href="#瓶颈" class="headerlink" title="瓶颈"></a>瓶颈</h1><p>对深度学习的主要批评是许多方法缺乏理论支撑。大多数深度结构仅仅是梯度下降的某些变式。尽管梯度下降已经被充分地研究，但理论涉及的其他算法，例如对比分歧算法，并没有获得充分的研究，其收敛性等问题仍不明确。深度学习方法常常被视为黑盒，大多数的结论确认都由经验而非理论来确定。</p>
+<p>也有学者认为，深度学习应当被视为通向真正人工智能的一条途径，而不是一种包罗万象的解决方案。尽管深度学习的能力很强，但和真正的人工智能相比，仍然缺乏诸多重要的能力。</p>
 ]]></content>
       <categories>
         <category>人工智能</category>
       </categories>
       <tags>
-        <tag>AI/Python</tag>
+        <tag>AI/深度学习</tag>
       </tags>
   </entry>
   <entry>
@@ -182,33 +209,6 @@
       </categories>
       <tags>
         <tag>AI/机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习</title>
-    <url>/post/33115a55/</url>
-    <content><![CDATA[<p>深度学习相关知识……</p>
-<span id="more"></span>
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是先学完机器学习后再学深度学习的。个人推荐深度学习还是先看吴恩达的深度学习视频一共有五套视频，讲的非常基础，之后有时间可以根据需要去看一些讲的深点的视频。我是开始就看的黑马的课程，讲的比较全且较深，开始还好，到后面有些知识点可能要花点时间去理解。在我看黑马的视频看的差不多后在老师推荐下去看了看吴恩达的课程，不过因为已经学过了此时再去看就比较无趣了，感觉他讲的东西太基础太简单了，所以我只是选择性的看了一些，并未看完。</p>
-<h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><p>深度学习（deep learning）是机器学习的分支，是一种试图使用包含复杂结构或由多重非线性变换构成的多个处理层对数据进行高层抽象的算法。 深度学习是机器学习中一种基于对数据进行表征学习的算法，至今已有数种深度学习框架，如卷积神经网络和深度置信网络和递归神经网络等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。</p>
-<p>深度学习是机器学习中一种基于对数据进行表征学习的算法。观测值（例如一幅图像）可以使用多种方式来表示，如每个像素强度值的向量，或者更抽象地表示成一系列边、特定形状的区域等。而使用某些特定的表示方法更容易从实例中学习任务（例如，人脸识别或面部表情识别）。</p>
-<p>至今已有数种深度学习框架，如卷积神经网络和深度置信网络和递归神经网络等已被应用在计算机视觉、语音识别、自然语言处理、音频识别与生物信息学等领域并获取了极好的效果。</p>
-<h1 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h1><p>深度学习框架，尤其是基于人工神经网络的框架可以追溯到1980年福岛邦彦提出的新认知机，而人工神经网络的历史则更为久远，甚至可以追溯到公元前亚里士多德为了解释人类大脑的运行规律而提出的联想主义心理学。1989年，扬·勒丘恩（Yann LeCun）等人开始将1974年提出的标准反向传播算法应用于深度神经网络，这一网络被用于手写邮政编码识别，并且在美国成功地被银行商业化应用了，轰动一时。2007年前后，杰弗里·辛顿和鲁斯兰·萨拉赫丁诺夫（Ruslan Salakhutdinov）提出了一种在前馈神经网络中进行有效训练的算法。这一算法将网络中的每一层视为无监督的受限玻尔兹曼机（RBM），再使用有监督的反向传播算法进行调优。之后，由Hinton等人创造的深度置信网络（DBN）指出，RBM可以以贪婪的方式进行堆叠和训练，也掀起了深度学习的研究热潮。2009年，又进一步提出Deep Boltzmann Machine，它与DBN的区别在于，DBM允许在底层中双向连接。因此，用DBM表示堆叠的RBM，比用DBN好得多。</p>
-<p>下表罗列了深度学习发展历史上的里程碑：</p>
-<p><img data-src="https://image.jiqizhixin.com/uploads/editor/049ef6b5-21e7-4596-8f22-242a9303cea0/1523891912559.jpg" alt="img"></p>
-<p>[表格来源：论文On the origin of deep learning；URL：<a href="https://arxiv.org/pdf/1702.07800.pdf">https://arxiv.org/pdf/1702.07800.pdf</a>]</p>
-<p>随着深度学习的高速发展，出现了大量的新模型与架构, 这些架构在不同领域发挥着重要作用：</p>
-<h2 id="卷积神经网络（CNN）"><a href="#卷积神经网络（CNN）" class="headerlink" title="卷积神经网络（CNN）"></a>卷积神经网络（CNN）</h2><p>除了包含执行目标识别任务的 AlexNet（2012年Imagenet冠军） 等深度卷积网络，还包括很多优秀的模型用于处理目标检测、语义分割和超分辨率等任务。它们以不同的方式应用卷积过程处理不同的任务，并在这些任务上产生了非常好的效果。从基本上来说，卷积相对于最初的全连接网络有很多优秀的属性，例如它只和上一层神经元产生部分的连接，同一个卷积核可以在输入张量上重复使用，也就是说特征检测器可以在输入图像上重复检测是否有该局部特征。这是卷积网络十分优秀的属性，它大大减少了两层间参数的数量。</p>
-<h2 id="循环神经网络（RNN）"><a href="#循环神经网络（RNN）" class="headerlink" title="循环神经网络（RNN）"></a>循环神经网络（RNN）</h2><p>是深度学习的重要组成部分，它可以让神经网络处理诸如文本、音频和视频等序列数据。它们可用来做序列的高层语义理解、序列标记，甚至可以从一个片段生产新的序列。目前有很多人工智能应用都依赖于循环深度神经网络，在谷歌（语音搜索）、百度（DeepSpeech）和亚马逊的产品中都能看到 RNN 的身影。基本的 RNN 结构难以处理长序列，然而一种特殊的 RNN 变种即「长短时记忆（LSTM）」网络可以很好地处理长序列问题。这种模型能力强大，在翻译、语音识别和图像描述等众多任务中均取得里程碑式的效果。因而，循环神经网络在最近几年得到了广泛使用。</p>
-<h1 id="瓶颈"><a href="#瓶颈" class="headerlink" title="瓶颈"></a>瓶颈</h1><p>对深度学习的主要批评是许多方法缺乏理论支撑。大多数深度结构仅仅是梯度下降的某些变式。尽管梯度下降已经被充分地研究，但理论涉及的其他算法，例如对比分歧算法，并没有获得充分的研究，其收敛性等问题仍不明确。深度学习方法常常被视为黑盒，大多数的结论确认都由经验而非理论来确定。</p>
-<p>也有学者认为，深度学习应当被视为通向真正人工智能的一条途径，而不是一种包罗万象的解决方案。尽管深度学习的能力很强，但和真正的人工智能相比，仍然缺乏诸多重要的能力。</p>
-]]></content>
-      <categories>
-        <category>人工智能</category>
-      </categories>
-      <tags>
-        <tag>AI/深度学习</tag>
       </tags>
   </entry>
 </search>

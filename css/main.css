@@ -1773,7 +1773,25 @@ pre code {
 .use-motion .post-block,
 .use-motion .pagination,
 .use-motion .comments {
-  visibility: hidden;
+  visibility: visible;
+}
+.use-motion .post-block .post_block,
+.use-motion .pagination .post_block,
+.use-motion .comments .post_block {
+  opacity: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.use-motion .post-block .pagination,
+.use-motion .pagination .pagination,
+.use-motion .comments .pagination,
+.use-motion .post-block .comments,
+.use-motion .pagination .comments,
+.use-motion .comments .comments {
+  opacity: 0;
 }
 .use-motion .post-header {
   visibility: hidden;
@@ -2843,10 +2861,17 @@ body {
   color: #800;
 }
 .sidebar {
-  opacity: 0.85;
+  opacity: 0.8;
 }
 .content-wrap {
   opacity: 0.8;
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 50px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .header-inner {
   background: rgba(255,255,255,0.9);
@@ -2856,13 +2881,6 @@ body {
 }
 .main-inner {
   opacity: 0.8;
-}
-.post {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .post-button .btn {
   color: #555 !important;
