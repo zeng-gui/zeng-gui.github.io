@@ -51,6 +51,21 @@
       </tags>
   </entry>
   <entry>
+    <title>python基础</title>
+    <url>/post/81b2f4bf/</url>
+    <content><![CDATA[<p>python基础知识与应用方向</p>
+<span id="more"></span>
+
+<p>待更新……</p>
+]]></content>
+      <categories>
+        <category>人工智能</category>
+      </categories>
+      <tags>
+        <tag>AI/Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux基础与实操</title>
     <url>/post/7596faec/</url>
     <content><![CDATA[<p>Linux相关基础知识与实操</p>
@@ -93,9 +108,9 @@
 
 <h1 id="对数据集进行处理"><a href="#对数据集进行处理" class="headerlink" title="对数据集进行处理"></a>对数据集进行处理</h1><h2 id="数据归一化"><a href="#数据归一化" class="headerlink" title="数据归一化"></a>数据归一化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.astype(<span class="string">&#x27;float32&#x27;</span>) /<span class="number">255</span></span><br><span class="line">x_test = x_test.astype(<span class="string">&#x27;float32&#x27;</span>) / <span class="number">255</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="对数据集维度进行处理"><a href="#对数据集维度进行处理" class="headerlink" title="对数据集维度进行处理"></a>对数据集维度进行处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">28</span>,<span class="number">28</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">28</span>,<span class="number">28</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="对数据集维度进行处理"><a href="#对数据集维度进行处理" class="headerlink" title="对数据集维度进行处理"></a>对数据集维度进行处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 
-<h2 id="将标签转化为one-hot-编码"><a href="#将标签转化为one-hot-编码" class="headerlink" title="将标签转化为one-hot 编码"></a>将标签转化为one-hot 编码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">batch_size = <span class="number">128</span>  <span class="comment"># 批次数</span></span><br><span class="line">num_classes = <span class="number">10</span> <span class="comment"># 分类数</span></span><br><span class="line">epo = <span class="number">10</span> <span class="comment"># 训练次数</span></span><br><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="将标签转化为one-hot-编码"><a href="#将标签转化为one-hot-编码" class="headerlink" title="将标签转化为one-hot 编码"></a>将标签转化为one-hot 编码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">batch_size = <span class="number">128</span>  <span class="comment"># 批次数</span></span><br><span class="line">num_classes = <span class="number">10</span> <span class="comment"># 分类数</span></span><br><span class="line">epo = <span class="number">10</span> <span class="comment"># 训练次数</span></span><br><span class="line">y_train = tf.keras.utils.to_categorical(y_train,num_classes)</span><br><span class="line">y_test = tf.keras.utils.to_categorical(y_test,num_classes)</span><br></pre></td></tr></table></figure>
 
 <h1 id="创建网络容器"><a href="#创建网络容器" class="headerlink" title="创建网络容器"></a>创建网络容器</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model = tf .keras.Sequential()</span><br></pre></td></tr></table></figure>
 
@@ -118,21 +133,6 @@
 ]]></content>
       <tags>
         <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python基础</title>
-    <url>/post/81b2f4bf/</url>
-    <content><![CDATA[<p>python基础知识与应用方向</p>
-<span id="more"></span>
-
-<p>待更新……</p>
-]]></content>
-      <categories>
-        <category>人工智能</category>
-      </categories>
-      <tags>
-        <tag>AI/Python</tag>
       </tags>
   </entry>
   <entry>
