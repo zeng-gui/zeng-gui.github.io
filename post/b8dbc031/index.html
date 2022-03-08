@@ -30,28 +30,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"zeng-gui.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.10.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-  <meta name="description" content="书三有路勤为径，学海无涯苦作舟！">
+  <meta name="description" content="使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络实现手写数字识别。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://zeng-gui.github.io/categories/index.html">
+<meta property="og:title" content="TensorFlow2.0手写数字识别（CNN）">
+<meta property="og:url" content="https://zeng-gui.github.io/post/b8dbc031/index.html">
 <meta property="og:site_name" content="曾桂的个人博客">
-<meta property="og:description" content="书三有路勤为径，学海无涯苦作舟！">
+<meta property="og:description" content="使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络实现手写数字识别。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-02-21T08:10:28.697Z">
-<meta property="article:modified_time" content="2022-02-21T08:10:28.697Z">
+<meta property="og:image" content="C://img/QQ截图20220308152257.png">
+<meta property="article:published_time" content="2022-03-08T06:56:27.000Z">
+<meta property="article:modified_time" content="2022-03-08T08:17:33.150Z">
 <meta property="article:author" content="曾桂">
+<meta property="article:tag" content="AI">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="C://img/QQ截图20220308152257.png">
 
 
-<link rel="canonical" href="https://zeng-gui.github.io/categories/">
+<link rel="canonical" href="https://zeng-gui.github.io/post/b8dbc031/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://zeng-gui.github.io/categories/index.html","path":"categories/index.html","title":"分类"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://zeng-gui.github.io/post/b8dbc031/","path":"post/b8dbc031/","title":"TensorFlow2.0手写数字识别（CNN）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类 | 曾桂的个人博客
-</title>
+<title>TensorFlow2.0手写数字识别（CNN） | 曾桂的个人博客</title>
   
 
 
@@ -119,7 +121,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -132,6 +134,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#TensorFlow%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">TensorFlow安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5%E6%A8%A1%E5%9D%97"><span class="nav-number">2.</span> <span class="nav-text">导入模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5Mnist%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">3.</span> <span class="nav-text">导入Mnist数据集</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E6%95%B0%E6%8D%AE%E9%9B%86%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86"><span class="nav-number">4.</span> <span class="nav-text">对数据集进行处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BD%92%E4%B8%80%E5%8C%96"><span class="nav-number">4.1.</span> <span class="nav-text">数据归一化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E6%95%B0%E6%8D%AE%E9%9B%86%E7%BB%B4%E5%BA%A6%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86"><span class="nav-number">4.2.</span> <span class="nav-text">对数据集维度进行处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E6%A0%87%E7%AD%BE%E8%BD%AC%E5%8C%96%E4%B8%BAone-hot-%E7%BC%96%E7%A0%81"><span class="nav-number">4.3.</span> <span class="nav-text">将标签转化为one-hot 编码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%BD%91%E7%BB%9C%E5%AE%B9%E5%99%A8"><span class="nav-number">5.</span> <span class="nav-text">创建网络容器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E5%8D%B7%E7%A7%AF%E6%93%8D%E4%BD%9C%E7%9A%84%E5%90%84%E5%B1%82%E7%BD%91%E7%BB%9C"><span class="nav-number">6.</span> <span class="nav-text">构建卷积操作的各层网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%B1%82%EF%BC%9A%E5%8C%85%E5%90%AB%E4%B8%A4%E5%B1%82%E5%8D%B7%E7%A7%AF%E4%B8%80%E5%B1%82%E6%B1%A0%E5%8C%96"><span class="nav-number">6.1.</span> <span class="nav-text">第一层：包含两层卷积一层池化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%B1%82%EF%BC%9A%E4%B8%A4%E5%B1%82%E5%8D%B7%E7%A7%AF%E4%B8%80%E5%B1%82%E6%B1%A0%E5%8C%96"><span class="nav-number">6.2.</span> <span class="nav-text">第二层：两层卷积一层池化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E5%90%8E%E5%8A%A0%E4%B8%A4%E5%B1%82%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%B1%82"><span class="nav-number">6.3.</span> <span class="nav-text">最后加两层全连接层</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E8%AF%91"><span class="nav-number">7.</span> <span class="nav-text">编译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%AD%E7%BB%83"><span class="nav-number">8.</span> <span class="nav-text">训练</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E4%BF%9D%E5%AD%98"><span class="nav-number">9.</span> <span class="nav-text">模型保存</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0"><span class="nav-number">10.</span> <span class="nav-text">模型评估</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -493,43 +496,159 @@ if(canvas.getContext){
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
   
   
 
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zeng-gui.github.io/post/b8dbc031/">
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="曾桂">
+      <meta itemprop="description" content="书三有路勤为径，学海无涯苦作舟！">
+    </span>
 
-<h1 class="post-title" itemprop="name headline">分类
-</h1>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曾桂的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          TensorFlow2.0手写数字识别（CNN）
+        </h1>
 
-<div class="post-meta-container">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-03-08 14:56:27 / 修改时间：16:17:33" itemprop="dateCreated datePublished" datetime="2022-03-08T14:56:27+08:00">2022-03-08</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/post/b8dbc031/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/post/b8dbc031/" data-xid="/post/b8dbc031/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body"><div class="category-all-page">
-  <div class="category-all-title">
-    目前共计 4 个分类
-  </div>
-  <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="category-list-count">1</span></li></ul>
-  </div>
-</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络实现手写数字识别。</p>
+<span id="more"></span>
 
-      </div>
-      
-      
-      
+<h1 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h1><p>这里安装的是是CPU版的，GPU版的安装比较麻烦，本人跟着网上的教程安装时遇到点问题没安装成功。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install tensorflow</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="C://img/QQ截图20220308152257.png"></p>
+<h1 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br></pre></td></tr></table></figure>
+
+<h1 id="导入Mnist数据集"><a href="#导入Mnist数据集" class="headerlink" title="导入Mnist数据集"></a>导入Mnist数据集</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(x_train,y_train),(x_test,y_test) = tf.keras.datasets.mnist.load_data()</span><br></pre></td></tr></table></figure>
+
+<h1 id="对数据集进行处理"><a href="#对数据集进行处理" class="headerlink" title="对数据集进行处理"></a>对数据集进行处理</h1><h2 id="数据归一化"><a href="#数据归一化" class="headerlink" title="数据归一化"></a>数据归一化</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x_train = x_train.astype(<span class="string">&#x27;float32&#x27;</span>) /<span class="number">255</span></span><br><span class="line">x_test = x_test.astype(<span class="string">&#x27;float32&#x27;</span>) / <span class="number">255</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="对数据集维度进行处理"><a href="#对数据集维度进行处理" class="headerlink" title="对数据集维度进行处理"></a>对数据集维度进行处理</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">28</span>,<span class="number">28</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">28</span>,<span class="number">28</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="将标签转化为one-hot-编码"><a href="#将标签转化为one-hot-编码" class="headerlink" title="将标签转化为one-hot 编码"></a>将标签转化为one-hot 编码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">batch_size = <span class="number">128</span>  <span class="comment"># 批次数</span></span><br><span class="line">num_classes = <span class="number">10</span> <span class="comment"># 分类数</span></span><br><span class="line">epo = <span class="number">10</span> <span class="comment"># 训练次数</span></span><br><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="创建网络容器"><a href="#创建网络容器" class="headerlink" title="创建网络容器"></a>创建网络容器</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model = tf .keras.Sequential()</span><br></pre></td></tr></table></figure>
+
+<h1 id="构建卷积操作的各层网络"><a href="#构建卷积操作的各层网络" class="headerlink" title="构建卷积操作的各层网络"></a>构建卷积操作的各层网络</h1><h2 id="第一层：包含两层卷积一层池化"><a href="#第一层：包含两层卷积一层池化" class="headerlink" title="第一层：包含两层卷积一层池化"></a>第一层：包含两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">32</span>, kernel_size=(<span class="number">5</span>, <span class="number">5</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>,</span><br><span class="line">                 input_shape=(<span class="number">28</span>, <span class="number">28</span>, <span class="number">1</span>)))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>,<span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二层：两层卷积一层池化"><a href="#第二层：两层卷积一层池化" class="headerlink" title="第二层：两层卷积一层池化"></a>第二层：两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>, <span class="number">2</span>), strides=(<span class="number">2</span>, <span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="最后加两层全连接层"><a href="#最后加两层全连接层" class="headerlink" title="最后加两层全连接层"></a>最后加两层全连接层</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">model.add(tf.keras.layers.Flatten())</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">256</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">10</span>, activation=<span class="string">&#x27;softmax&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.<span class="built_in">compile</span>(loss=<span class="string">&#x27;categorical_crossentropy&#x27;</span>, optimizer=<span class="string">&#x27;adam&#x27;</span>, metrics=[<span class="string">&#x27;accuracy&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<h1 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.fit(x_train, y_train, batch_size=batch_size,epochs=epo,verbose=<span class="number">1</span>,validation_data=(x_test, y_test))</span><br></pre></td></tr></table></figure>
+
+<h1 id="模型保存"><a href="#模型保存" class="headerlink" title="模型保存"></a>模型保存</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">model_file = <span class="string">&#x27;model.h5&#x27;</span></span><br><span class="line">model.save(model_file)</span><br></pre></td></tr></table></figure>
+
+<h1 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">loss accuracy = model.evaluate(x_test,y_test,verbose=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>原创技术分享，您的支持将鼓励我继续创作</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.jpg" alt="曾桂 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.jpg" alt="曾桂 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/AI/" rel="tag"># AI</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/8ae993b6/" rel="prev" title="LeetCode刷题记录">
+                  <i class="fa fa-chevron-left"></i> LeetCode刷题记录
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
     <div class="comments" id="waline-comments"></div>
@@ -632,7 +751,7 @@ if(canvas.getContext){
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"hexo-waline-rosy.vercel.app","placeholder":"请文明评论!","avatar":"mm","pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/categories/"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"hexo-waline-rosy.vercel.app","placeholder":"请文明评论!","avatar":"mm","pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/post/b8dbc031/"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
   NexT.utils.loadComments(CONFIG.waline.el).then(() => 

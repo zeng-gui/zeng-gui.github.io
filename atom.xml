@@ -6,7 +6,7 @@
   <link href="https://zeng-gui.github.io/atom.xml" rel="self"/>
   
   <link href="https://zeng-gui.github.io/"/>
-  <updated>2022-02-18T03:10:48.364Z</updated>
+  <updated>2022-03-08T08:17:33.150Z</updated>
   <id>https://zeng-gui.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TensorFlow2.0手写数字识别（CNN）</title>
+    <link href="https://zeng-gui.github.io/post/b8dbc031/"/>
+    <id>https://zeng-gui.github.io/post/b8dbc031/</id>
+    <published>2022-03-08T06:56:27.000Z</published>
+    <updated>2022-03-08T08:17:33.150Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络实现手写数字识别。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="AI" scheme="https://zeng-gui.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode刷题记录</title>
@@ -78,7 +95,7 @@
     <link href="https://zeng-gui.github.io/post/498ab7d9/"/>
     <id>https://zeng-gui.github.io/post/498ab7d9/</id>
     <published>2022-02-11T11:45:30.000Z</published>
-    <updated>2022-02-21T08:19:19.755Z</updated>
+    <updated>2022-03-05T07:36:53.475Z</updated>
     
     
     <summary type="html">&lt;p&gt;机器学习相关知识与学习经验与资源分享&lt;/p&gt;</summary>

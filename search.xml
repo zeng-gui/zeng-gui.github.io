@@ -51,6 +51,33 @@
       </tags>
   </entry>
   <entry>
+    <title>linux基础与实操</title>
+    <url>/post/7596faec/</url>
+    <content><![CDATA[<p>Linux相关基础知识与实操</p>
+<span id="more"></span>
+
+<h1 id="本人Linux学习历程"><a href="#本人Linux学习历程" class="headerlink" title="本人Linux学习历程"></a>本人Linux学习历程</h1><p>我首先接触Linux相关知识实在大一下学期后的暑假，是在机器人社团的一位大佬学长给的一些资料上学习了一些基本使用，当时使用的工具为VMware15虚拟机软件和Ubuntu18镜像，后来自己买了一个树莓派4B的开发板使用的树莓派官方镜像。到此时还只会一些Linux基础部分（相关工具的安装与使用、部分常用的使用指令、目录结构等），对用户管理管理、组管理、进程管理、任务调度、磁盘分区、网络配置等知识和使用基本上是一片空白；后来看过一些黑马的Linux课程，但也并不完整，主要是一些基本配置和指令的使用。因此后来等到寒假在家有时间才完整的看完了一整个课程视频，看的是尚硅谷的Linux课程（后附课件文件）。</p>
+<h1 id="Linux概述"><a href="#Linux概述" class="headerlink" title="Linux概述"></a>Linux概述</h1><p>Linux是基于Unix的开源免费的操作系统，由于系统的稳定性和安全性几乎成为程序代码运行的最佳系统环境。Linux是由Linus Torvalds（林纳斯·托瓦兹）起初开发的，由于源代码的开放性，现在已经衍生出了成千上百种不同的Linux系统。</p>
+<p>Linux系统的应用非常广泛，不仅可以长时间的运行我们编写的程序代码，还可以安装在各种计算机硬件设备中，比如手机、平板电脑、路由器等。尤其在这里提及一下，我们熟知是Android程序最底层就是运行在linux系统</p>
+<h1 id="Linux的分类"><a href="#Linux的分类" class="headerlink" title="Linux的分类"></a>Linux的分类</h1><p>(1)Linux根据市场需求不同，基本分为两个方向：<br>1）图形化界面版：注重用户体验，类似window操作系统，但目前成熟度不够<br>2）服务器版：没有好看的界面，是以在控制台窗口中输入命令操作系统的，类似 于DOS，是我们架设服务器的最佳选择</p>
+<p>(2)Linux根据原生程度，又分为两种：<br>1）内核版本：在Linus领导下的内核小组开发维护的系统内核的版本号<br>2）发行版本：一些组织或公司在内核版基础上进行二次开发而重新发行的版本</p>
+<p>(3)Linux发行版本不同，又可以分为n多种：</p>
+<p><img data-src="https://img-blog.csdnimg.cn/20200612110553792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW90YWkxMjM0,size_16,color_FFFFFF,t_70#pic_center" alt="img"></p>
+<h1 id="Linux的安装"><a href="#Linux的安装" class="headerlink" title="Linux的安装"></a>Linux的安装</h1><h2 id="虚拟机的安装（软件）"><a href="#虚拟机的安装（软件）" class="headerlink" title="虚拟机的安装（软件）"></a>虚拟机的安装（软件）</h2><p>因为Linux也是一个系统，本质上跟我们电脑的Window没有区别，所以我们要学习Linux就首先将我们电脑的Window系统换成Linux系统，或者在我们电脑上安装双系统，听上去是不是很可怕。其实我们可以在我们电脑上安装一个软件，这个软甲可以模拟一台或多台虚拟的电脑机器，这就是虚拟机</p>
+<p>虚拟器常用的有两种：<br>VMware（威睿）公司的虚拟机软件，功能强大，收费产品<br>VitrualBox 虚拟机软件 Oracle公司的虚拟机软件，免费商品<br>（本人使用的是VMware，后附安装包）</p>
+<h2 id="远程工具"><a href="#远程工具" class="headerlink" title="远程工具"></a>远程工具</h2><p>实际开发中，Linux服务器都在其他的地方，我们要通过远程的方式去连接Linux并操作它，Linux远程的操作工具有很多，本人使用的远程连接工具有:Putty、Xshell</p>
+<p>文件传输工具：Xftp、FileZilla Client</p>
+<h1 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h1><h2 id="尚硅谷Linux课程课件文档："><a href="#尚硅谷Linux课程课件文档：" class="headerlink" title="尚硅谷Linux课程课件文档："></a>尚硅谷Linux课程课件文档：</h2><p>链接：<a href="https://pan.baidu.com/s/1tTkI0qfwelmN3Zt_vuc01w?pwd=2dnj">https://pan.baidu.com/s/1tTkI0qfwelmN3Zt_vuc01w?pwd=2dnj</a><br>提取码：2dnj<br>–来自百度网盘超级会员V3的分享</p>
+<h2 id="VMware15安装包及教程资料"><a href="#VMware15安装包及教程资料" class="headerlink" title="VMware15安装包及教程资料"></a>VMware15安装包及教程资料</h2><p>链接：<a href="https://pan.baidu.com/s/1nez3Rtjt4fgUJj18kJDe6w?pwd=w79s">https://pan.baidu.com/s/1nez3Rtjt4fgUJj18kJDe6w?pwd=w79s</a><br>提取码：w79s<br>–来自百度网盘超级会员V3的分享</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python基础</title>
     <url>/post/81b2f4bf/</url>
     <content><![CDATA[<p>python基础知识与应用方向</p>
@@ -66,18 +93,46 @@
       </tags>
   </entry>
   <entry>
-    <title>本人博客搭建过程</title>
-    <url>/post/8e6e8b7f/</url>
-    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
+    <title>TensorFlow2.0手写数字识别（CNN）</title>
+    <url>/post/b8dbc031/</url>
+    <content><![CDATA[<p>使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络实现手写数字识别。</p>
 <span id="more"></span>
 
-<p>具体过程后续有时间慢慢更新</p>
+<h1 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h1><p>这里安装的是是CPU版的，GPU版的安装比较麻烦，本人跟着网上的教程安装时遇到点问题没安装成功。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install tensorflow</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="C://img/QQ截图20220308152257.png"></p>
+<h1 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br></pre></td></tr></table></figure>
+
+<h1 id="导入Mnist数据集"><a href="#导入Mnist数据集" class="headerlink" title="导入Mnist数据集"></a>导入Mnist数据集</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">(x_train,y_train),(x_test,y_test) = tf.keras.datasets.mnist.load_data()</span><br></pre></td></tr></table></figure>
+
+<h1 id="对数据集进行处理"><a href="#对数据集进行处理" class="headerlink" title="对数据集进行处理"></a>对数据集进行处理</h1><h2 id="数据归一化"><a href="#数据归一化" class="headerlink" title="数据归一化"></a>数据归一化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.astype(<span class="string">&#x27;float32&#x27;</span>) /<span class="number">255</span></span><br><span class="line">x_test = x_test.astype(<span class="string">&#x27;float32&#x27;</span>) / <span class="number">255</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="对数据集维度进行处理"><a href="#对数据集维度进行处理" class="headerlink" title="对数据集维度进行处理"></a>对数据集维度进行处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">28</span>,<span class="number">28</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>], <span class="number">1</span>, <span class="number">28</span>,<span class="number">28</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="将标签转化为one-hot-编码"><a href="#将标签转化为one-hot-编码" class="headerlink" title="将标签转化为one-hot 编码"></a>将标签转化为one-hot 编码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">batch_size = <span class="number">128</span>  <span class="comment"># 批次数</span></span><br><span class="line">num_classes = <span class="number">10</span> <span class="comment"># 分类数</span></span><br><span class="line">epo = <span class="number">10</span> <span class="comment"># 训练次数</span></span><br><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="创建网络容器"><a href="#创建网络容器" class="headerlink" title="创建网络容器"></a>创建网络容器</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model = tf .keras.Sequential()</span><br></pre></td></tr></table></figure>
+
+<h1 id="构建卷积操作的各层网络"><a href="#构建卷积操作的各层网络" class="headerlink" title="构建卷积操作的各层网络"></a>构建卷积操作的各层网络</h1><h2 id="第一层：包含两层卷积一层池化"><a href="#第一层：包含两层卷积一层池化" class="headerlink" title="第一层：包含两层卷积一层池化"></a>第一层：包含两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">32</span>, kernel_size=(<span class="number">5</span>, <span class="number">5</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>,</span><br><span class="line">                 input_shape=(<span class="number">28</span>, <span class="number">28</span>, <span class="number">1</span>)))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>,<span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二层：两层卷积一层池化"><a href="#第二层：两层卷积一层池化" class="headerlink" title="第二层：两层卷积一层池化"></a>第二层：两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>, <span class="number">2</span>), strides=(<span class="number">2</span>, <span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="最后加两层全连接层"><a href="#最后加两层全连接层" class="headerlink" title="最后加两层全连接层"></a>最后加两层全连接层</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Flatten())</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">256</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">10</span>, activation=<span class="string">&#x27;softmax&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.<span class="built_in">compile</span>(loss=<span class="string">&#x27;categorical_crossentropy&#x27;</span>, optimizer=<span class="string">&#x27;adam&#x27;</span>, metrics=[<span class="string">&#x27;accuracy&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<h1 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.fit(x_train, y_train, batch_size=batch_size,epochs=epo,verbose=<span class="number">1</span>,validation_data=(x_test, y_test))</span><br></pre></td></tr></table></figure>
+
+<h1 id="模型保存"><a href="#模型保存" class="headerlink" title="模型保存"></a>模型保存</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model_file = <span class="string">&#x27;model.h5&#x27;</span></span><br><span class="line">model.save(model_file)</span><br></pre></td></tr></table></figure>
+
+<h1 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">loss accuracy = model.evaluate(x_test,y_test,verbose=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
       <tags>
-        <tag>hexo</tag>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
@@ -132,30 +187,18 @@
       </tags>
   </entry>
   <entry>
-    <title>linux基础与实操</title>
-    <url>/post/7596faec/</url>
-    <content><![CDATA[<p>Linux相关基础知识与实操</p>
+    <title>本人博客搭建过程</title>
+    <url>/post/8e6e8b7f/</url>
+    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
 <span id="more"></span>
 
-<h1 id="本人Linux学习历程"><a href="#本人Linux学习历程" class="headerlink" title="本人Linux学习历程"></a>本人Linux学习历程</h1><p>我首先接触Linux相关知识实在大一下学期后的暑假，是在机器人社团的一位大佬学长给的一些资料上学习了一些基本使用，当时使用的工具为VMware15虚拟机软件和Ubuntu18镜像，后来自己买了一个树莓派4B的开发板使用的树莓派官方镜像。到此时还只会一些Linux基础部分（相关工具的安装与使用、部分常用的使用指令、目录结构等），对用户管理管理、组管理、进程管理、任务调度、磁盘分区、网络配置等知识和使用基本上是一片空白；后来看过一些黑马的Linux课程，但也并不完整，主要是一些基本配置和指令的使用。因此后来等到寒假在家有时间才完整的看完了一整个课程视频，看的是尚硅谷的Linux课程（后附课件文件）。</p>
-<h1 id="Linux概述"><a href="#Linux概述" class="headerlink" title="Linux概述"></a>Linux概述</h1><p>Linux是基于Unix的开源免费的操作系统，由于系统的稳定性和安全性几乎成为程序代码运行的最佳系统环境。Linux是由Linus Torvalds（林纳斯·托瓦兹）起初开发的，由于源代码的开放性，现在已经衍生出了成千上百种不同的Linux系统。</p>
-<p>Linux系统的应用非常广泛，不仅可以长时间的运行我们编写的程序代码，还可以安装在各种计算机硬件设备中，比如手机、平板电脑、路由器等。尤其在这里提及一下，我们熟知是Android程序最底层就是运行在linux系统</p>
-<h1 id="Linux的分类"><a href="#Linux的分类" class="headerlink" title="Linux的分类"></a>Linux的分类</h1><p>(1)Linux根据市场需求不同，基本分为两个方向：<br>1）图形化界面版：注重用户体验，类似window操作系统，但目前成熟度不够<br>2）服务器版：没有好看的界面，是以在控制台窗口中输入命令操作系统的，类似 于DOS，是我们架设服务器的最佳选择</p>
-<p>(2)Linux根据原生程度，又分为两种：<br>1）内核版本：在Linus领导下的内核小组开发维护的系统内核的版本号<br>2）发行版本：一些组织或公司在内核版基础上进行二次开发而重新发行的版本</p>
-<p>(3)Linux发行版本不同，又可以分为n多种：</p>
-<p><img data-src="https://img-blog.csdnimg.cn/20200612110553792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW90YWkxMjM0,size_16,color_FFFFFF,t_70#pic_center" alt="img"></p>
-<h1 id="Linux的安装"><a href="#Linux的安装" class="headerlink" title="Linux的安装"></a>Linux的安装</h1><h2 id="虚拟机的安装（软件）"><a href="#虚拟机的安装（软件）" class="headerlink" title="虚拟机的安装（软件）"></a>虚拟机的安装（软件）</h2><p>因为Linux也是一个系统，本质上跟我们电脑的Window没有区别，所以我们要学习Linux就首先将我们电脑的Window系统换成Linux系统，或者在我们电脑上安装双系统，听上去是不是很可怕。其实我们可以在我们电脑上安装一个软件，这个软甲可以模拟一台或多台虚拟的电脑机器，这就是虚拟机</p>
-<p>虚拟器常用的有两种：<br>VMware（威睿）公司的虚拟机软件，功能强大，收费产品<br>VitrualBox 虚拟机软件 Oracle公司的虚拟机软件，免费商品<br>（本人使用的是VMware，后附安装包）</p>
-<h2 id="远程工具"><a href="#远程工具" class="headerlink" title="远程工具"></a>远程工具</h2><p>实际开发中，Linux服务器都在其他的地方，我们要通过远程的方式去连接Linux并操作它，Linux远程的操作工具有很多，本人使用的远程连接工具有:Putty、Xshell</p>
-<p>文件传输工具：Xftp、FileZilla Client</p>
-<h1 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h1><h2 id="尚硅谷Linux课程课件文档："><a href="#尚硅谷Linux课程课件文档：" class="headerlink" title="尚硅谷Linux课程课件文档："></a>尚硅谷Linux课程课件文档：</h2><p>链接：<a href="https://pan.baidu.com/s/1tTkI0qfwelmN3Zt_vuc01w?pwd=2dnj">https://pan.baidu.com/s/1tTkI0qfwelmN3Zt_vuc01w?pwd=2dnj</a><br>提取码：2dnj<br>–来自百度网盘超级会员V3的分享</p>
-<h2 id="VMware15安装包及教程资料"><a href="#VMware15安装包及教程资料" class="headerlink" title="VMware15安装包及教程资料"></a>VMware15安装包及教程资料</h2><p>链接：<a href="https://pan.baidu.com/s/1nez3Rtjt4fgUJj18kJDe6w?pwd=w79s">https://pan.baidu.com/s/1nez3Rtjt4fgUJj18kJDe6w?pwd=w79s</a><br>提取码：w79s<br>–来自百度网盘超级会员V3的分享</p>
+<p>具体过程后续有时间慢慢更新</p>
 ]]></content>
       <categories>
-        <category>Linux</category>
+        <category>博客</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
