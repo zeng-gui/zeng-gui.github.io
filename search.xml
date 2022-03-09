@@ -51,21 +51,6 @@
       </tags>
   </entry>
   <entry>
-    <title>python基础</title>
-    <url>/post/81b2f4bf/</url>
-    <content><![CDATA[<p>python基础知识与应用方向</p>
-<span id="more"></span>
-
-<p>待更新……</p>
-]]></content>
-      <categories>
-        <category>人工智能</category>
-      </categories>
-      <tags>
-        <tag>AI/Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux基础与实操</title>
     <url>/post/7596faec/</url>
     <content><![CDATA[<p>Linux相关基础知识与实操</p>
@@ -93,46 +78,18 @@
       </tags>
   </entry>
   <entry>
-    <title>TensorFlow2.0手写数字识别（CNN）</title>
-    <url>/post/b8dbc031/</url>
-    <content><![CDATA[<p>使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络（CNN）实现手写数字识别。</p>
+    <title>python基础</title>
+    <url>/post/81b2f4bf/</url>
+    <content><![CDATA[<p>python基础知识与应用方向</p>
 <span id="more"></span>
 
-<h1 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h1><p>这里安装的是CPU版的，GPU版的安装比较麻烦，本人跟着网上的教程安装时遇到点问题没安装成功。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install tensorflow</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="C://img/QQ截图20220308152257.png"></p>
-<h1 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br></pre></td></tr></table></figure>
-
-<h1 id="导入Mnist数据集"><a href="#导入Mnist数据集" class="headerlink" title="导入Mnist数据集"></a>导入Mnist数据集</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">(x_train,y_train),(x_test,y_test) = tf.keras.datasets.mnist.load_data()</span><br></pre></td></tr></table></figure>
-
-<h1 id="对数据集进行处理"><a href="#对数据集进行处理" class="headerlink" title="对数据集进行处理"></a>对数据集进行处理</h1><h2 id="数据归一化"><a href="#数据归一化" class="headerlink" title="数据归一化"></a>数据归一化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.astype(<span class="string">&#x27;float32&#x27;</span>) /<span class="number">255</span></span><br><span class="line">x_test = x_test.astype(<span class="string">&#x27;float32&#x27;</span>) / <span class="number">255</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="对数据集维度进行处理"><a href="#对数据集维度进行处理" class="headerlink" title="对数据集维度进行处理"></a>对数据集维度进行处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="将标签转化为one-hot-编码"><a href="#将标签转化为one-hot-编码" class="headerlink" title="将标签转化为one-hot 编码"></a>将标签转化为one-hot 编码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">batch_size = <span class="number">128</span>  <span class="comment"># 批次数</span></span><br><span class="line">num_classes = <span class="number">10</span> <span class="comment"># 分类数</span></span><br><span class="line">epo = <span class="number">10</span> <span class="comment"># 训练次数</span></span><br><span class="line">y_train = tf.keras.utils.to_categorical(y_train,num_classes)</span><br><span class="line">y_test = tf.keras.utils.to_categorical(y_test,num_classes)</span><br></pre></td></tr></table></figure>
-
-<h1 id="创建网络容器"><a href="#创建网络容器" class="headerlink" title="创建网络容器"></a>创建网络容器</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model = tf .keras.Sequential()</span><br></pre></td></tr></table></figure>
-
-<h1 id="构建卷积操作的各层网络"><a href="#构建卷积操作的各层网络" class="headerlink" title="构建卷积操作的各层网络"></a>构建卷积操作的各层网络</h1><h2 id="第一层：包含两层卷积一层池化"><a href="#第一层：包含两层卷积一层池化" class="headerlink" title="第一层：包含两层卷积一层池化"></a>第一层：包含两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">32</span>, kernel_size=(<span class="number">5</span>, <span class="number">5</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>,</span><br><span class="line">                 input_shape=(<span class="number">28</span>, <span class="number">28</span>, <span class="number">1</span>)))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>,<span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
-
-<h2 id="第二层：两层卷积一层池化"><a href="#第二层：两层卷积一层池化" class="headerlink" title="第二层：两层卷积一层池化"></a>第二层：两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>, <span class="number">2</span>), strides=(<span class="number">2</span>, <span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
-
-<h2 id="最后加两层全连接层"><a href="#最后加两层全连接层" class="headerlink" title="最后加两层全连接层"></a>最后加两层全连接层</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Flatten())</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">256</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">10</span>, activation=<span class="string">&#x27;softmax&#x27;</span>))</span><br></pre></td></tr></table></figure>
-
-<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.<span class="built_in">compile</span>(loss=<span class="string">&#x27;categorical_crossentropy&#x27;</span>, optimizer=<span class="string">&#x27;adam&#x27;</span>, metrics=[<span class="string">&#x27;accuracy&#x27;</span>])</span><br></pre></td></tr></table></figure>
-
-<h1 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.fit(x_train, y_train, batch_size=batch_size,epochs=epo,verbose=<span class="number">1</span>,validation_data=(x_test, y_test))</span><br></pre></td></tr></table></figure>
-
-<h1 id="模型保存"><a href="#模型保存" class="headerlink" title="模型保存"></a>模型保存</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model_file = <span class="string">&#x27;model.h5&#x27;</span></span><br><span class="line">model.save(model_file)</span><br></pre></td></tr></table></figure>
-
-<h1 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">loss accuracy = model.evaluate(x_test,y_test,verbose=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-
-
+<p>待更新……</p>
 ]]></content>
+      <categories>
+        <category>人工智能</category>
+      </categories>
       <tags>
-        <tag>AI</tag>
+        <tag>AI/Python</tag>
       </tags>
   </entry>
   <entry>
@@ -184,6 +141,53 @@
       </categories>
       <tags>
         <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TensorFlow2.0手写数字识别（CNN）</title>
+    <url>/post/b8dbc031/</url>
+    <content><![CDATA[<p>使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络（CNN）实现手写数字识别。</p>
+<span id="more"></span>
+
+<h1 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h1><p>这里安装的是CPU版的，GPU版的安装比较麻烦，本人跟着网上的教程安装时遇到点问题没安装成功。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install tensorflow</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="/post/b8dbc031/QQ%E6%88%AA%E5%9B%BE20220308152257.jpg"></p>
+<h1 id="导入模块"><a href="#导入模块" class="headerlink" title="导入模块"></a>导入模块</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br></pre></td></tr></table></figure>
+
+<h1 id="导入Mnist数据集"><a href="#导入Mnist数据集" class="headerlink" title="导入Mnist数据集"></a>导入Mnist数据集</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">(x_train,y_train),(x_test,y_test) = tf.keras.datasets.mnist.load_data()</span><br></pre></td></tr></table></figure>
+
+<h1 id="对数据集进行处理"><a href="#对数据集进行处理" class="headerlink" title="对数据集进行处理"></a>对数据集进行处理</h1><h2 id="数据归一化"><a href="#数据归一化" class="headerlink" title="数据归一化"></a>数据归一化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.astype(<span class="string">&#x27;float32&#x27;</span>) /<span class="number">255</span></span><br><span class="line">x_test = x_test.astype(<span class="string">&#x27;float32&#x27;</span>) / <span class="number">255</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="对数据集维度进行处理"><a href="#对数据集维度进行处理" class="headerlink" title="对数据集维度进行处理"></a>对数据集维度进行处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x_train = x_train.reshape(x_train.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br><span class="line">x_test = x_test.reshape(x_test.shape[<span class="number">0</span>],<span class="number">28</span>,<span class="number">28</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="将标签转化为one-hot-编码"><a href="#将标签转化为one-hot-编码" class="headerlink" title="将标签转化为one-hot 编码"></a>将标签转化为one-hot 编码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">batch_size = <span class="number">128</span>  <span class="comment"># 批次数</span></span><br><span class="line">num_classes = <span class="number">10</span> <span class="comment"># 分类数</span></span><br><span class="line">epo = <span class="number">10</span> <span class="comment"># 训练次数</span></span><br><span class="line">y_train = tf.keras.utils.to_categorical(y_train,num_classes)</span><br><span class="line">y_test = tf.keras.utils.to_categorical(y_test,num_classes)</span><br></pre></td></tr></table></figure>
+
+<h1 id="创建网络容器"><a href="#创建网络容器" class="headerlink" title="创建网络容器"></a>创建网络容器</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model = tf .keras.Sequential()</span><br></pre></td></tr></table></figure>
+
+<h1 id="构建卷积操作的各层网络"><a href="#构建卷积操作的各层网络" class="headerlink" title="构建卷积操作的各层网络"></a>构建卷积操作的各层网络</h1><h2 id="第一层：包含两层卷积一层池化"><a href="#第一层：包含两层卷积一层池化" class="headerlink" title="第一层：包含两层卷积一层池化"></a>第一层：包含两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">32</span>, kernel_size=(<span class="number">5</span>, <span class="number">5</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>,</span><br><span class="line">                 input_shape=(<span class="number">28</span>, <span class="number">28</span>, <span class="number">1</span>)))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>,<span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二层：两层卷积一层池化"><a href="#第二层：两层卷积一层池化" class="headerlink" title="第二层：两层卷积一层池化"></a>第二层：两层卷积一层池化</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Conv2D(filters=<span class="number">64</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), padding=<span class="string">&#x27;Same&#x27;</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.MaxPool2D(pool_size=(<span class="number">2</span>, <span class="number">2</span>), strides=(<span class="number">2</span>, <span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+
+<h2 id="最后加两层全连接层"><a href="#最后加两层全连接层" class="headerlink" title="最后加两层全连接层"></a>最后加两层全连接层</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.add(tf.keras.layers.Flatten())</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">256</span>, activation=<span class="string">&#x27;relu&#x27;</span>))</span><br><span class="line">model.add(tf.keras.layers.Dense(<span class="number">10</span>, activation=<span class="string">&#x27;softmax&#x27;</span>))</span><br></pre></td></tr></table></figure>
+
+<p>*参数量：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.summary()</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="/post/b8dbc031/QQ%E6%88%AA%E5%9B%BE20220308181603.jpg"></p>
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.<span class="built_in">compile</span>(loss=<span class="string">&#x27;categorical_crossentropy&#x27;</span>, optimizer=<span class="string">&#x27;adam&#x27;</span>, metrics=[<span class="string">&#x27;accuracy&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<h1 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.fit(x_train, y_train, batch_size=batch_size,epochs=epo,verbose=<span class="number">1</span>,validation_data=(x_test, y_test))</span><br></pre></td></tr></table></figure>
+
+<h1 id="模型保存"><a href="#模型保存" class="headerlink" title="模型保存"></a>模型保存</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model_file = <span class="string">&#x27;model.h5&#x27;</span></span><br><span class="line">model.save(model_file)</span><br></pre></td></tr></table></figure>
+
+<h1 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">loss accuracy = model.evaluate(x_test,y_test,verbose=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <tags>
+        <tag>AI</tag>
       </tags>
   </entry>
   <entry>
