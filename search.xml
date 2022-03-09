@@ -51,6 +51,21 @@
       </tags>
   </entry>
   <entry>
+    <title>python基础</title>
+    <url>/post/81b2f4bf/</url>
+    <content><![CDATA[<p>python基础知识与应用方向</p>
+<span id="more"></span>
+
+<p>待更新……</p>
+]]></content>
+      <categories>
+        <category>人工智能</category>
+      </categories>
+      <tags>
+        <tag>AI/Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux基础与实操</title>
     <url>/post/7596faec/</url>
     <content><![CDATA[<p>Linux相关基础知识与实操</p>
@@ -75,21 +90,6 @@
       </categories>
       <tags>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python基础</title>
-    <url>/post/81b2f4bf/</url>
-    <content><![CDATA[<p>python基础知识与应用方向</p>
-<span id="more"></span>
-
-<p>待更新……</p>
-]]></content>
-      <categories>
-        <category>人工智能</category>
-      </categories>
-      <tags>
-        <tag>AI/Python</tag>
       </tags>
   </entry>
   <entry>
@@ -179,30 +179,17 @@
 
 <h1 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model.fit(x_train, y_train, batch_size=batch_size,epochs=epo,verbose=<span class="number">1</span>,validation_data=(x_test, y_test))</span><br></pre></td></tr></table></figure>
 
+<p><img data-src="/post/b8dbc031/QQ%E6%88%AA%E5%9B%BE20220309103620.png"></p>
+<p>训练时间将近半小时。</p>
 <h1 id="模型保存"><a href="#模型保存" class="headerlink" title="模型保存"></a>模型保存</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">model_file = <span class="string">&#x27;model.h5&#x27;</span></span><br><span class="line">model.save(model_file)</span><br></pre></td></tr></table></figure>
 
-<h1 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">loss accuracy = model.evaluate(x_test,y_test,verbose=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">loss accuracy = model.evaluate(x_test,y_test,verbose=<span class="number">1</span>)</span><br><span class="line">loss,accuracy</span><br></pre></td></tr></table></figure>
 
-
-
+<p><img data-src="/post/b8dbc031/QQ%E6%88%AA%E5%9B%BE20220309103706.png"></p>
+<p>测试准确率高达百分之99以上，损失也很小，模型整体还行。</p>
 ]]></content>
       <tags>
         <tag>AI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本人博客搭建过程</title>
-    <url>/post/8e6e8b7f/</url>
-    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
-<span id="more"></span>
-
-<p>具体过程后续有时间慢慢更新</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -229,6 +216,21 @@
       </categories>
       <tags>
         <tag>AI/机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本人博客搭建过程</title>
+    <url>/post/8e6e8b7f/</url>
+    <content><![CDATA[<p>用hexo框架搭建起来操作简单，但更换主题及功能完善和美化过程繁琐且费时间。</p>
+<span id="more"></span>
+
+<p>具体过程后续有时间慢慢更新</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
