@@ -6,7 +6,7 @@
   <link href="https://zeng-gui.github.io/atom.xml" rel="self"/>
   
   <link href="https://zeng-gui.github.io/"/>
-  <updated>2022-03-09T02:42:55.429Z</updated>
+  <updated>2022-03-17T11:29:14.432Z</updated>
   <id>https://zeng-gui.github.io/</id>
   
   <author>
@@ -17,14 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>TensorFlow2.0手写数字识别（CNN）</title>
+    <title>基于TensorFlow2.0手写数字识别</title>
     <link href="https://zeng-gui.github.io/post/b8dbc031/"/>
     <id>https://zeng-gui.github.io/post/b8dbc031/</id>
     <published>2022-03-08T06:56:27.000Z</published>
-    <updated>2022-03-09T02:42:55.429Z</updated>
+    <updated>2022-03-17T11:29:14.432Z</updated>
     
     
-    <summary type="html">&lt;p&gt;使用Mnist数据集基于TensorFlow2.0（Keras）加卷积神经网络（CNN）实现手写数字识别。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;使用Mnist数据集基于TensorFlow2.0实现手写数字识别。有直接调keras搭建网络的版本和不调keras(趋于底层）的版本&lt;/p&gt;</summary>
     
     
     
