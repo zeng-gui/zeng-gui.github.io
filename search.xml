@@ -149,7 +149,7 @@
     <content><![CDATA[<p>使用Mnist数据集基于TensorFlow2.0实现手写数字识别。有直接调keras搭建网络的版本和不调keras(趋于底层）的版本</p>
 <span id="more"></span>
 
-<h1 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h1><p>这里安装的是CPU版的，GPU版的安装比较麻烦，本人跟着网上的教程安装时遇到点问题没安装成功。</p>
+<h1 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h1><p>这里安装的是CPU版的，GPU版的安装比较麻烦，本人跟着网上的教程安装了几次才成功。训练mnist手写数字数据集使用CPU就足够了。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install tensorflow</span><br></pre></td></tr></table></figure>
 
 <p><img data-src="/post/b8dbc031/QQ%E6%88%AA%E5%9B%BE20220308152257.jpg"></p>

@@ -6,7 +6,7 @@
   <link href="https://zeng-gui.github.io/atom.xml" rel="self"/>
   
   <link href="https://zeng-gui.github.io/"/>
-  <updated>2022-03-17T11:29:14.432Z</updated>
+  <updated>2022-07-01T06:22:15.217Z</updated>
   <id>https://zeng-gui.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zeng-gui.github.io/post/b8dbc031/"/>
     <id>https://zeng-gui.github.io/post/b8dbc031/</id>
     <published>2022-03-08T06:56:27.000Z</published>
-    <updated>2022-03-17T11:29:14.432Z</updated>
+    <updated>2022-07-01T06:22:15.217Z</updated>
     
     
     <summary type="html">&lt;p&gt;使用Mnist数据集基于TensorFlow2.0实现手写数字识别。有直接调keras搭建网络的版本和不调keras(趋于底层）的版本&lt;/p&gt;</summary>
